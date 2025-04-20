@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, url_for
+from bereshit import bereshit_cont
 
 app = Flask(__name__)
 
@@ -10,7 +11,11 @@ def index():
 
 @app.route('/bereshit')
 def bereshit():
-    return render_template('bereshit.html')
+    spanish_verses = bereshit_cont['cap_1']['spanish']
+    hebrew_verses = bereshit_cont['cap_1']['hebrew']
+    phonetics_verses = bereshit_cont['cap_1']['phonetics']
+
+    return render_template('bereshit.html', español=spanish_verses, hebreo=hebrew_verses, fonetica=phonetics_verses)
 
 
 

@@ -11,9 +11,19 @@
         <div class="main-header">
             <div class="title-div">
             
+                <div class="buttons-div">
+                    <p style="margin: 0;">Fonetica:</p>
+                    <button class="btn-1" id="btn-1-id" onclick="toUnwatch()" disabled>
+                        <div class="img-btn-1"></div>
+                    </button>
+                    <button class="btn-2" id="btn-2-id" onclick="toWatch()">
+                        <div class="img-btn-2"></div>
+                    </button>
+                </div>
+                
                 <div class="title-menu">
                     <div class="selector-div">
-                        <label for="selector-id">Capítulo: </label>
+                        <label for="selector-id">Génesis: </label>
                         <select name="" id="selector-id">
                             <option value="">1</option>
                             <option value="">2</option>
@@ -28,28 +38,68 @@
             </div>
         </div>
         <div class="section-div">
+            
             <section>
-                <div class="general-verse-div">
-                    <div class="span-heb">
-                        <div class="span-div">
-                            <div class="texts">
-                                <p>En el principio creo Dios los cielos y la tierra.</p>
-                            </div>
-                        </div>
-                        <div class="hebr-div">
-                            <div class="texts">
-                                <p>בְּרֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים אֵ֥ת הַשָּׁמַ֖יִם וְאֵ֥ת הָאָֽרֶץ</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fonet">
-                        <div>
-                            <p>Bereshit bara Elohim et hashamayim ve'et ha'arets.</p>
-                        </div>
-                    </div>
+                <div class="main-content">
+                    <table>
+                        <th colspan="2"></th>
+                        <tbody>
+                            {% for x in range(30) %}
+                                <tr>
+                                    <td class="td-1">{{ español[x] }}</td>
+                                    <td class="td-2">{{ hebreo[x] }}</td>
+                                    
+                                </tr>
+                                <tr class="tr-3" style="display: none;">
+                                    <td class="td-3" colspan="2">{{ fonetica[x] }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
                 </div>
             </section>
+
         </div>
     </div>
 </body>
+
+<!-- EYES SCRIPT -->
+<script>
+    function toWatch() {
+        var myRow = document.getElementsByClassName('tr-3');
+        var lockButton = document.getElementById('btn-1-id');
+        var unlockButton = document.getElementById('btn-2-id');
+
+        
+        for (let i = 0; i < myRow.length; i++) {
+            myRow[i].style.display = "table-row";
+        }
+        
+        lockButton.disabled = false;
+        lockButton.style.background = "rgb(0, 0, 115)";
+
+        unlockButton.disabled = true;
+        unlockButton.style.background = "rgb(0, 0, 175)";
+    }
+
+
+    function toUnwatch() {
+        var myRow = document.getElementsByClassName('tr-3');
+        var lockButton = document.getElementById('btn-1-id');
+        var unlockButton = document.getElementById('btn-2-id');
+
+        for (let i = 0; i < myRow.length; i++) {
+            myRow[i].style.display = "none";
+        }
+
+        lockButton.disabled = true;
+        lockButton.style.background = "rgb(0, 0, 175)";
+
+        unlockButton.disabled = false;
+        unlockButton.style.background = "rgb(0, 0, 115)";
+
+    }
+</script>
+
+
 </html>
