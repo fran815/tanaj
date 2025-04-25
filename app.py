@@ -11,9 +11,9 @@ def index():
 
 @app.route('/bereshit')
 def bereshit():
-    spanish_verses = bereshit_cont['cap_1']['spanish']
-    hebrew_verses = bereshit_cont['cap_1']['hebrew']
-    phonetics_verses = bereshit_cont['cap_1']['phonetics']
+    spanish_verses = bereshit_cont
+    hebrew_verses = bereshit_cont
+    phonetics_verses = bereshit_cont
 
     return render_template('bereshit.html', español=spanish_verses, hebreo=hebrew_verses, fonetica=phonetics_verses)
 

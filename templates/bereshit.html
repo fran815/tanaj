@@ -10,6 +10,9 @@
     <div class="main-div">
         <div class="main-header">
             <div class="title-div">
+                <div class="magen-dav">
+                    <div class="img-magen" onclick="menuDiv()"></div>
+                </div>
             
                 <div class="buttons-div">
                     <p style="margin: 0;">Fonetica:</p>
@@ -21,7 +24,7 @@
                     </button>
                 </div>
                 
-                <div class="title-menu">
+                <!-- <div class="title-menu">
                     <div class="selector-div">
                         <label for="selector-id">Génesis: </label>
                         <select name="" id="selector-id">
@@ -32,26 +35,236 @@
                             <option value="">5</option>
                         </select>
                     </div>
-                </div>
+                </div> -->
 
                 <h1>בְּרֵאשִׁית</h1>
             </div>
+            <div class="caps-div">
+                <div class="caps-div-width">
+                    <p style="margin: 0;">Capitulos:</p>
+                    <div>
+                        <a href="#sect-1" class="caps">1</a>
+                        <a href="#sect-2" class="caps">2</a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="menu-div" id="menu-div-id">
+            <div class="menu-space">
+                <div>
+                    <a href="{{ url_for('index') }}">Inicio</a>
+                </div>
+                <div class="alef-bet">
+                    <p>Alef-bet</p>
+                    
+                    <table>
+                        
+                        <tbody>
+                            <tr>
+                                <td>א</td>
+                                <td>a</td>
+                            </tr>
+                            <tr>
+                                <td>ב/בּ</td>
+                                <td>b/v</td>
+                            </tr>
+                            <tr>
+                                <td>ג</td>
+                                <td>g</td>
+                            </tr>
+                            <tr>
+                                <td>ד</td>
+                                <td>d</td>
+                            </tr>
+                            <tr>
+                                <td>ה</td>
+                                <td>h</td>
+                            </tr>
+                            <tr>
+                                <td>ו</td>
+                                <td>vav</td>
+                            </tr>
+                            <tr>
+                                <td>ז</td>
+                                <td>z</td>
+                            </tr>
+                            <tr>
+                                <td>ח</td>
+                                <td>j</td>
+                            </tr>
+                            <tr>
+                                <td>ט</td>
+                                <td>t</td>
+                            </tr>
+                            <tr>
+                                <td>י</td>
+                                <td>i</td>
+                            </tr>
+                            <tr>
+                                <td>כּ</td>
+                                <td>k</td>
+                            </tr>
+                            <tr>
+                                <td>ל</td>
+                                <td>l</td>
+                            </tr>
+                            <tr>
+                                <td>מ/ם</td>
+                                <td>m.s/m</td>
+                            </tr>
+                            <tr>
+                                <td>כ/ך</td>
+                                <td>j.s/j</td>
+                            </tr>
+                            <tr>
+                                <td>נ/ן</td>
+                                <td>n.s/n</td>
+                            </tr>
+                            <tr>
+                                <td>ס</td>
+                                <td>s</td>
+                            </tr>
+                            <tr>
+                                <td>ע</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>פ/ף</td>
+                                <td>f.s/f</td>
+                            </tr>
+                            <tr>
+                                <td>פּ</td>
+                                <td>p</td>
+                            </tr>
+                            <tr>
+                                <td>צ/ץ</td>
+                                <td>tz.s/tz</td>
+                            </tr>
+                            <tr>
+                                <td>ק</td>
+                                <td>q</td>
+                            </tr>
+                            <tr>
+                                <td>ר</td>
+                                <td>r</td>
+                            </tr>
+                            <tr>
+                                <td>שׁ</td>
+                                <td>sh</td>
+                            </tr>
+                            <tr>
+                                <td>שׂ</td>
+                                <td>s</td>
+                            </tr>
+                            <tr>
+                                <td>תּ</td>
+                                <td>t</td>
+                            </tr>
+                            <tr>
+                                <td>ת</td>
+                                <td>s</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Niqqud</td>
+                            </tr>
+                            <tr>
+                                <td>אָ</td>
+                                <td rowspan="3">a</td>
+                            </tr>
+                            <tr>
+                                <td>אַ</td>
+                            </tr>
+                            <tr>
+                                <td>אֲ</td>
+                            </tr>
+                            <tr>
+                                <td>אֶ</td>
+                                <td rowspan="4">e</td>
+                            </tr>
+                            <tr>
+                                <td>אֵ</td>
+                            </tr>
+                            <tr>
+                                <td>אֱ</td>
+                            </tr>
+                            <tr>
+                                <td>אְ</td>
+                            </tr>
+
+                            <tr>
+                                <td>אִ</td>
+                                <td>i</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>אֹ</td>
+                                <td rowspan="4">o</td>
+                            </tr>
+                            <tr>
+                                <td>וֹ</td>
+                            </tr>
+                            <tr>
+                                <td>אׇ</td>
+                            </tr>
+                            <tr>
+                                <td>אֳ</td>
+                            </tr>
+
+                            <tr>
+                                <td>אֻ</td>
+                                <td rowspan="2">u</td>
+                            </tr>
+                            <tr>
+                                <td>וּ</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
         <div class="section-div">
             
-            <section>
+            <section id="sect-1">
+                <div style="height: 130px;"></div>
                 <div class="main-content">
                     <table>
-                        <th colspan="2"></th>
+                        <th colspan="2" style="font-size: 25px;">א</th>
                         <tbody>
                             {% for x in range(30) %}
                                 <tr>
-                                    <td class="td-1">{{ español[x] }}</td>
-                                    <td class="td-2">{{ hebreo[x] }}</td>
+                                    <td class="td-1">{{ español['cap_1']['spanish'][x] }}</td>
+                                    <td class="td-2">{{ hebreo['cap_1']['hebrew'][x] }}</td>
                                     
                                 </tr>
                                 <tr class="tr-3" style="display: none;">
-                                    <td class="td-3" colspan="2">{{ fonetica[x] }}</td>
+                                    <td class="td-3" colspan="2">{{ fonetica['cap_1']['phonetics'][x] }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="sect-2">
+                <div style="height: 120px;"></div>
+                <div class="main-content">
+                    <table>
+                        <th colspan="2" style="font-size: 25px;">ב</th>
+                        <tbody>
+                            {% for x in range(25) %}
+                                <tr>
+                                    <td class="td-1">{{ español['cap_2']['spanish'][x] }}</td>
+                                    <td class="td-2">{{ hebreo['cap_2']['hebrew'][x] }}</td>
+                                    
+                                </tr>
+                                <tr class="tr-3" style="display: none;">
+                                    <td class="td-3" colspan="2">{{ fonetica['cap_2']['phonetics'][x] }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>
@@ -98,6 +311,17 @@
         unlockButton.disabled = false;
         unlockButton.style.background = "rgb(0, 0, 115)";
 
+    }
+
+    function menuDiv() {
+        var mainMenu = document.getElementById('menu-div-id');
+
+        if (mainMenu.style.display == 'none') {
+            mainMenu.style.display = 'flex';
+        }
+        else {
+            mainMenu.style.display = 'none';
+        }
     }
 </script>
 

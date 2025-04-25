@@ -9,17 +9,27 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+
+    color: white;
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%);
 }
 .title-div {
     display: flex;
     justify-content: right;
     align-items: center;
     width: 100%;
-
-    color: white;
-    background: #020024;
-    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%);
 }
+.magen-dav {
+    margin-right: auto;
+}
+.img-magen {
+    background-image: url(/static/css/img/shield.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+}
+
 h1 {
     margin-right: 15px;
 }
@@ -27,9 +37,60 @@ h1 {
     margin: 20px;
 }
 
+.caps-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    color: white;
+}
+.caps-div-width {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 40px;
+    text-align: center;
+}
+.caps {
+    color: white;
+    text-decoration: none;
+}
+
+/* MENU DIV FOR ALEF-BET */
+.menu-div {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    top: 120px;
+    left: 0;
+    width: 160px;
+    height: 500px;
+
+    background-color: rgb(0, 0, 78);
+}
+.menu-space {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.menu-space a {
+    color: white;
+    text-decoration: none;
+}
+.alef-bet {
+    display: flex;
+    flex-direction: column;
+    height: 495px;
+
+    color: white;
+    overflow-y: scroll;
+}
+
 /* BUTTONS */
 .buttons-div {
     text-align: center;
+    margin-right: 20px;
 }
 .btn-1 {
     width: 50px;
@@ -67,7 +128,6 @@ h1 {
 /* BODY */
 .main-div {
     width: 100%;
-    margin-top: 100px;
 }
 
 
