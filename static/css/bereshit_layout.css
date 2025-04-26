@@ -59,15 +59,15 @@ h1 {
 /* MENU DIV FOR ALEF-BET */
 .menu-div {
     position: fixed;
-    display: none;
     justify-content: center;
     text-align: center;
-    top: 120px;
+    top: 22%;
     left: 0;
-    width: 160px;
-    height: 500px;
+    width: 250px;
+    height: 600px;
 
     background-color: rgb(0, 0, 78);
+    border-radius: 10px;
 }
 .menu-space {
     display: flex;
@@ -77,6 +77,9 @@ h1 {
 .menu-space a {
     color: white;
     text-decoration: none;
+}
+.menu-table tr,td {
+    border: 2px solid white;
 }
 .alef-bet {
     display: flex;
@@ -175,6 +178,12 @@ tr:nth-child(even) {
 @media (max-width:550px) {
     .general-verse-div {
         font-size: 18px;
+    }
+
+    /* MENU */
+    .menu-div {
+        width: 160px;
+        height: 500px;
     }
 
     /* PHONETICS */

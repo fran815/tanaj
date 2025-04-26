@@ -11,10 +11,21 @@
     <div class="main-body-div">
         <div class="main-header">
             <div class="menu-div">
-                <div class="menu-img"></div>
+                <div class="menu-img" onclick="menuDiv()"></div>
             </div>
             <div class="title-div">
                 <h1>תּוֹרָה</h1>
+            </div>
+        </div>
+
+        <div class="index-main-menu" id="index-main-menu-id" style="display: none;">
+            <div class="menu-space">
+                <div class="menu-item">
+                    <a href="" class="menu-elem">בְּרָכוֹת - Bendiciones</a>
+                </div>
+                <div class="menu-item">
+                    <a href="" class="menu-elem">אָלֶף־בֵּית עִבְרִי - Alfabeto</a>
+                </div>
             </div>
         </div>
 
@@ -25,7 +36,7 @@
                         <a href="{{ url_for('bereshit') }}">
                             <div class="text">
                                 <p class="book">בְּרֵאשִׁית</p>
-                                <p class="book-translit">Bereshit</p>
+                                <p class="book-translit">Génesis</p>
                             </div>
                         </a>
                     </div>
@@ -33,7 +44,7 @@
                         <a href="">
                             <div class="text">
                                 <p class="book">שְמוֹת</p>
-                                <p class="book-translit">Shemot</p>
+                                <p class="book-translit">Éxodo</p>
                             </div>
                         </a>
                     </div>
@@ -41,7 +52,7 @@
                         <a href="">
                             <div class="text">
                                 <p class="book">וָיִקְרָא</p>
-                                <p class="book-translit">Vayikra</p>
+                                <p class="book-translit">Levítico</p>
                             </div>
                         </a>
                     </div>
@@ -52,7 +63,7 @@
                         <a href="">
                             <div class="text">
                                 <p class="book">בַמִדְבָר</p>
-                                <p class="book-translit">Bamidbar</p>
+                                <p class="book-translit">Números</p>
                             </div>
                         </a>
                     </div>
@@ -60,7 +71,7 @@
                         <a href="">
                             <div class="text">
                                 <p class="book">דְבָרִים</p>
-                                <p class="book-translit">Devarim</p>
+                                <p class="book-translit">Deuteronomio</p>
                             </div>
                         </a>
                     </div>
@@ -76,7 +87,7 @@
                         <a href="{{ url_for('bereshit') }}">
                             <div class="text-resp">
                                 <p class="book">בְּרֵאשִׁית</p>
-                                <p class="book-translit">Bereshit</p>
+                                <p class="book-translit">Génesis</p>
                             </div>
                         </a>
                     </div>
@@ -84,7 +95,7 @@
                         <a href="">
                             <div class="text">
                                 <p class="book">שְמוֹת</p>
-                                <p class="book-translit">Shemot</p>
+                                <p class="book-translit">Éxodo</p>
                             </div>
                         </a>
                     </div>
@@ -92,7 +103,7 @@
                         <a href="">
                             <div class="text">
                                 <p class="book">וָיִקְרָא</p>
-                                <p class="book-translit">Vayikra</p>
+                                <p class="book-translit">Levítico</p>
                             </div>
                         </a>
                     </div>
@@ -105,7 +116,7 @@
                         <a href="">
                             <div class="text">
                                 <p class="book">בַמִדְבָר</p>
-                                <p class="book-translit">Bamidbar</p>
+                                <p class="book-translit">Números</p>
                             </div>
                         </a>
                     </div>
@@ -113,7 +124,7 @@
                         <a href="">
                             <div class="text">
                                 <p class="book">דְבָרִים</p>
-                                <p class="book-translit">Devarim</p>
+                                <p class="book-translit">Deuteronomio</p>
                             </div>
                         </a>
                     </div>
@@ -124,4 +135,19 @@
     </div>
 
 </body>
+
+<script>
+    function menuDiv() {
+        var mainMenu = document.getElementById('index-main-menu-id');
+
+        if (mainMenu.style.display == 'none') {
+            mainMenu.style.display = 'flex';
+        }
+        else {
+            mainMenu.style.display = 'none';
+        }
+    }
+</script>
+
+
 </html>
