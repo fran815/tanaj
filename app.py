@@ -18,6 +18,10 @@ def bereshit():
     return render_template('bereshit.html', español=spanish_verses, hebreo=hebrew_verses, fonetica=phonetics_verses)
 
 
+@app.route('/alef-bet')
+def alphabet():
+    return render_template('alphabet.html')
+
 
 if __name__=='__main__':
     app.run(debug=True)

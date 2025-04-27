@@ -46,14 +46,26 @@ h1 {
 }
 .caps-div-width {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    width: 90%;
-    height: 40px;
+    width: 70%;
+    height: 50px;
     text-align: center;
+
+}
+.cap-container {
+    display: flex;
+    width: 100%;
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: rgba(92, 92, 92, 0.5) rgb(1, 1, 97);
 }
 .caps {
-    color: white;
     text-decoration: none;
+    margin-inline: 10px;
+
+    color: white;
 }
 
 /* MENU DIV FOR ALEF-BET */
@@ -78,8 +90,17 @@ h1 {
     color: white;
     text-decoration: none;
 }
-.menu-table tr,td {
-    border: 2px solid white;
+
+/* ALEF-BET TABLE */
+.alefbet-table {
+    border-collapse: collapse;
+    font-size: 20px;
+}
+/* .menu-table td{
+    border: none;
+} */
+.alefbet-table .menu-table tr:hover {
+    background-color: rgb(0, 0, 78);
 }
 .alef-bet {
     display: flex;
@@ -88,6 +109,7 @@ h1 {
 
     color: white;
     overflow-y: scroll;
+    scrollbar-color: rgb(21, 21, 87) rgb(0, 0, 78);
 }
 
 /* BUTTONS */
@@ -149,18 +171,21 @@ h1 {
 
 
 /* TABLE AND ROWs */
-table {
+.caps-table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
-td, th {
+.caps-table td, th {
     border: 1px solid transparent;
     text-align: center;
     padding: 8px;
 }
-tr:nth-child(even) {
+.caps-table tr:nth-child(even) {
     background-color: rgba(209, 209, 209, 0.357);
+}
+.caps-table tr:hover {
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250,250,250) 0%, rgb(225,234,238) 90%);
 }
 
 .td-1 {width: 50%;}

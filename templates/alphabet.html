@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/alpha_index.css') }}">
+    <title>Alef-Bet</title>
+</head>
+<body>
+    <div>
+        <div class="menu-header">
+            <h1 style="padding-right: 20px;">Hebreo Online</h1>
+            <div class="option-div">
+                <a href="">Alfabeto</a>
+                <a href="">Vocabulario</a>
+                <a href="">Practica</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-div">
+        <div class="profile-img">
+            <div class="profile-header">
+                <div class="logo">
+                    <div class="mag-david-img"><a href="{{ url_for('index') }}" style="color: transparent;">Click Here</a></div>
+                </div>
+                <!-- <div class="mybutton">   
+                    <div class="menu-img-div" id="menu_button" onclick="optionButton()"></div>
+                </div> -->
+            </div>
+            <hr>
+            <div class="responsive-menu-div">
+                <div class="responsive-menu" id="container">
+                    <div class="menu-options" id="options">
+                        <!-- <a href="{{ url_for('index') }}" id="a-1" class="op-a" style="margin-top: 20px;">אִתְחוּל (Itjul)</a> -->
+                        <a href="" id="a-2" class="op-a" style="margin-top: 35px; margin-bottom: 35px;">מִלִים (Milim)</a>
+                        <a href="" class="op-a" id="a-3" style="margin-bottom: 20px;">תָּרְגִּילִים (Targuilim)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-div">
+        <div class="alpha-div">
+            <h2>אָלֵפ-בֵּית / Alef-Bet</h2>
+            <table>
+                <tr class="t-head">
+                    <th>Hebreo</th>
+                    <th>Español</th>
+                    <th>Nombre</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td id="hebLet">א</td>
+                        <td>- (usa niqud)</td>
+                        <td>Alef</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">בּ</td>
+                        <td>B</td>
+                        <td>Bet</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ב</td>
+                        <td>V</td>
+                        <td>Vet</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ג</td>
+                        <td>G</td>
+                        <td>Guimel</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ד</td>
+                        <td>D</td>
+                        <td>Dálet</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ה</td>
+                        <td>H (J suave)</td>
+                        <td>Héi</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ו</td>
+                        <td>Va, Ve, Vi, Vo</td>
+                        <td>Váv</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ז</td>
+                        <td>Z</td>
+                        <td>Zain</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ת</td>
+                        <td>T (th)</td>
+                        <td>Tav</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ט</td>
+                        <td>T</td>
+                        <td>Tet</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">י</td>
+                        <td>Y</td>
+                        <td>Yud</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">כ</td>
+                        <td>J</td>
+                        <td>Jaf</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ך</td>
+                        <td>J (final)</td>
+                        <td>Jaf Sofit</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">כּ</td>
+                        <td>K</td>
+                        <td>Kaf</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ךּ</td>
+                        <td>K (final)</td>
+                        <td>Kaf Sofit</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ל</td>
+                        <td>L</td>
+                        <td>Lamed</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">מ</td>
+                        <td>M</td>
+                        <td>Mem</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ם</td>
+                        <td>M (final)</td>
+                        <td>Mem Sofit</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">נ</td>
+                        <td>N</td>
+                        <td>Nun</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ן</td>
+                        <td>N (final)</td>
+                        <td>Nun Sofit</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ס</td>
+                        <td>S</td>
+                        <td>Sámej</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ע</td>
+                        <td>- (usa niqud)</td>
+                        <td>Ayin</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">פּ</td>
+                        <td>P</td>
+                        <td>Pei</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ףּ</td>
+                        <td>P (final)</td>
+                        <td>Pei Sofit</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">פ</td>
+                        <td>F</td>
+                        <td>Fei</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ף</td>
+                        <td>F (final)</td>
+                        <td>Fei Sofit</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">צ</td>
+                        <td>Tz</td>
+                        <td>Tzadi</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ץ</td>
+                        <td>Tz (final)</td>
+                        <td>Tzadi Sofit</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ק</td>
+                        <td>Q</td>
+                        <td>Qof</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ר</td>
+                        <td>R</td>
+                        <td>Resh</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">שׁ</td>
+                        <td>Sh</td>
+                        <td>Shin</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">שׂ</td>
+                        <td>S</td>
+                        <td>Sin</td>
+                    </tr>
+                    <tr>
+                        <td id="hebLet">ח</td>
+                        <td>J/X</td>
+                        <td>Jet</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="vocals-div">
+            <h2>נִיקּדוֹת / Niqudot</h2>
+            <div class="a-div">
+                <h4>A: </h4>
+                <div class="a-igm"><img src="/static/css/imgs/kamatz.jpeg" alt=""></div>
+                <div class="a-igm"><img src="/static/css/imgs/pataj.jpeg" alt=""></div>
+                <div class="a-igm"><img src="/static/css/imgs/jataf_pataj.jpeg" alt=""></div>
+            </div>
+
+            <div class="e-div">
+                <h4>E: </h4>
+                <div class="e-img"><img src="/static/css/imgs/tzeire.jpeg" alt=""></div>
+                <div class="e-img"><img src="/static/css/imgs/tzeire_male.jpeg" alt=""></div>
+                <div class="e-img"><img src="/static/css/imgs/segol.jpeg" alt=""></div>
+                <div class="e-img"><img src="/static/css/imgs/jataf_segol.jpeg" alt=""></div>
+                <div class="e-img"><img src="/static/css/imgs/sheva.jpeg" alt=""></div>
+            </div>
+
+            <div class="i-div">
+                <h4>I: </h4>
+                <div class="i-img"><img src="/static/css/imgs/jirik.jpeg" alt=""></div>
+                <div class="i-img"><img src="/static/css/imgs/jirik_male.jpeg" alt=""></div>
+            </div>
+
+            <div class="o-div">
+                <h4>O: </h4>
+                <div class="o-img"><img src="/static/css/imgs/jolam.jpeg" alt=""></div>
+                <div class="o-img"><img src="/static/css/imgs/jolam_male.jpeg" alt=""></div>
+                <div class="o-img"><img src="/static/css/imgs/kamatz_katen.jpeg" alt=""></div>
+                <div class="o-img"><img src="/static/css/imgs/jataf_kamatz.jpeg" alt=""></div>
+            </div>
+
+            <div class="u-div">
+                <h4>U: </h4>
+                <div class="u-img"><img src="/static/css/imgs/shuruk.jpeg" alt=""></div>
+                <div class="u-img"><img src="/static/css/imgs/kubutz.jpeg" alt=""></div>
+            </div>
+        </div>
+
+</body>
+<!-- <script>
+    function optionButton() {
+        var opt = document.getElementById("container");
+
+        if (opt.style.display == 'block') {
+            opt.animate([
+                {transform: "scaleX(100%)", opacity: 1},
+                {transform: "scaleX(0%)", opacity: 0}
+            ], {duration: 500},
+            );
+            setTimeout(function() {
+                opt.style.display = "none";
+            }, 400);
+        } 
+        else {
+            opt.style.display = 'block';
+        }
+    }
+</script> -->
+</html>
