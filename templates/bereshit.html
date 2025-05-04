@@ -34,7 +34,7 @@
                         <!-- 10 -->
                         <a href="#sect-1" class="caps">1</a>
                         <a href="#sect-2" class="caps">2</a>
-                        <a href="" class="caps">3</a>
+                        <a href="#sect-3" class="caps">3</a>
                         <a href="" class="caps">4</a>
                         <a href="" class="caps">5</a>
                         <a href="" class="caps">6</a>
@@ -278,11 +278,12 @@
                 <div style="height: 130px;"></div>
                 <div class="main-content">
                     <table class="caps-table">
-                        <th colspan="2" style="font-size: 25px;">א</th>
+                        <th colspan="3" style="font-size: 25px;">א</th>
                         <tbody>
                             {% for x in range(30) %}
                                 <tr>
-                                    <td class="td-1">{{ español['cap_1']['spanish'][x] }}</td>
+                                    <td style="font-weight: bold;">{{ x+1 }}</td>
+                                    <td class="td-1" style="text-align: left;">{{ español['cap_1']['spanish'][x] }}</td>
                                     <td class="td-2">{{ hebreo['cap_1']['hebrew'][x] }}</td>
                                     
                                 </tr>
@@ -301,16 +302,39 @@
                 <div style="height: 120px;"></div>
                 <div class="main-content">
                     <table class="caps-table">
-                        <th colspan="2" style="font-size: 25px;">ב</th>
+                        <th colspan="3" style="font-size: 25px;">ב</th>
                         <tbody>
                             {% for x in range(25) %}
                                 <tr>
-                                    <td class="td-1">{{ español['cap_2']['spanish'][x] }}</td>
+                                    <td style="font-weight: bold;">{{ x+1 }}</td>
+                                    <td class="td-1" style="text-align: left;">{{ español['cap_2']['spanish'][x] }}</td>
                                     <td class="td-2">{{ hebreo['cap_2']['hebrew'][x] }}</td>
-                                    
                                 </tr>
                                 <tr class="tr-3" style="display: none;">
                                     <td class="td-3" colspan="2">{{ fonetica['cap_2']['phonetics'][x] }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="sect-3">
+                <div style="height: 120px;"></div>
+                <div class="main-content">
+                    <table class="caps-table">
+                        <th colspan="3" style="font-size: 25px;">ג</th>
+                        <tbody>
+                            {% for x in range(24) %}
+                                <tr>
+                                    <td style="font-weight: bold;">{{ x+1 }}</td>
+                                    <td class="td-1" style="text-align: left;">{{ español['cap_3']['spanish'][x] }}</td>
+                                    <td class="td-2">{{ hebreo['cap_3']['hebrew'][x] }}</td>
+                                </tr>
+                                <tr class="tr-3" style="display: none;">
+                                    <td class="td-3" colspan="2">{{ fonetica['cap_3']['phonetics'][x] }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>

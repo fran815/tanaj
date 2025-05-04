@@ -182,6 +182,88 @@ bereshit_cont = {
             'Al-kén ya’azov-ish ‘et-‘aviv ve’et imó vedavaq be’ishtó vehayú levasar ‘ejad.', #24
             'Vayihyú shneyhem ‘arumim ha’adam ve’ishtó veló yitboshashu.' #25
         ]
+    },
+
+    'cap_3': {
+        'spanish': [
+            'Pero la serpiente era astuta, más que toda bestia del campo que YHVH ’Elohim había hecho. Y dijo a la mujer: ¿Conque ’Elohim ha dicho: No comáis de ningún árbol del huerto?', #1
+            'Y dijo la mujer a la serpiente: Del fruto de los árboles del huerto podemos comer,', #2
+            'pero del fruto del árbol que está en medio del huerto, ha dicho ’Elohim: No comáis de él ni lo toquéis,° para que no muráis.', #3
+            'Entonces dijo la serpiente a la mujer: Ciertamente no moriréis,', #4
+            'sino que sabe ’Elohim que el día que comáis de él, se os abrirán los ojos y seréis semejantes a ’Elohim,° conocedores del bien y del mal.', #5
+            'Así, vio la mujer que el árbol era bueno para comer,° y que era agradable a los ojos, y que era el árbol deseado para alcanzar conocimiento. Y tomó de su fruto y comió, y dio también a su marido, que estaba con ella, y él comió.', #6
+            'Entonces se les abrieron los ojos a ambos y se dieron cuenta de que estaban desnudos, y cosieron follaje° de higuera, y se hicieron ceñidores° para sí mismos.', #7
+            'Y oyeron la voz de Hashem ’Elohim paseando por el huerto a la brisa del día, y se escondió el hombre y su mujer del rostro de Hashem ’Elohim entre los árboles del huerto.', #8
+            'Pero Hashem ’Elohim llamó al hombre, y le dijo: ¿Dónde estás?', #9
+            'Y contestó:° He oído tu sonido en el huerto y he tenido miedo porque estoy desnudo; y me he escondido.', #10
+            'Y dijo: ¿Quién te ha indicado que estás desnudo? ¿Acaso has comido del árbol del cual te ordené que no comieras?', #11
+            'Y dijo el hombre: La mujer que pusiste conmigo, ella me ha dado del árbol y he comido.', #12
+            'Y dijo Hashem ’Elohim a la mujer: ¿Qué es esto que has hecho? Y respondió la mujer: La serpiente me engañó,° y he comido.', #13
+            'Entonces dijo Hashem ’Elohim a la serpiente: Por cuanto hiciste esto, ¡apartada del testamento, tú entre todos los animales y entre todas las bestias del campo! Sobre tu vientre andarás, Y polvo comerás todos los días de tu vida.', #14
+            'Y pondré enemistad entre ti y la mujer, Y entre tu simiente y su simiente. Él herirá tu cabeza y tú herirás su talón.', #15
+            'A la mujer dijo: Multiplicaré en gran manera tus dolores y tus preñeces, Con dolor parirás los hijos, Y tu deseo será hacia tu marido, Y él gobernará por ti.', #16
+            'Y al hombre dijo: Por cuanto escuchaste a la voz de tu mujer, Y comiste del árbol del cual te ordené, diciendo: No comas de él, ¡apartada del testamento sea la tierra por causa tuya! Con fatiga comerás de ella todos los días de tu vida,', #17
+            'Espino y abrojo te brotará. Comerás hierba del campo.', #18
+            'Con el sudor de tu rostro comerás pan hasta que retornes a la tierra, Porque de ella fuiste tomado, Pues polvo eres y al polvo volverás.', #19
+            'Y el hombre llamó el nombre de su mujer Eva, por cuanto ella llegó a ser madre de todo viviente.', #20
+            'Entonces Hashem ’Elohim hizo túnicas de piel para Adam y su mujer, y los vistió.', #21
+            'Y dijo Hashem ’Elohim: Ciertamente el hombre fue como uno de nosotros, a la hora de conocer el bien y el mal.A menos que ahora extienda su mano y tome también del árbol de la vida, y coma y viva, no será para siempre.', #22
+            'Y ’Elohim lo expulsó del huerto de Edén, de trabajar la tierra, porque había sido tomado de alli.', #23
+            'Y expulsó al hombre e hizo habitar desde la eternidad, al huerto del Edén, a los querubines, y a la espada flameante que oscila para guardar el camino del árbol de la vida.' #24
+        ],
+
+        'hebrew': [
+            'וְהַנָּחָשׁ, הָיָה עָרוּם, מִכֹּל חַיַּת הַשָּׂדֶה, אֲשֶׁר עָשָׂה יְהוָה אֱלֹהִים; וַיֹּאמֶר, אֶל-הָאִשָּׁה, אַף כִּי-אָמַר אֱלֹהִים, לֹא תֹאכְלוּ מִכֹּל עֵץ הַגָּן', #1
+            'וַתֹּאמֶר הָאִשָּׁה, אֶל-הַנָּחָשׁ:  מִפְּרִי עֵץ-הַגָּן, נֹאכֵל', #2
+            'וּמִפְּרִי הָעֵץ, אֲשֶׁר בְּתוֹךְ-הַגָּן–אָמַר אֱלֹהִים לֹא תֹאכְלוּ מִמֶּנּוּ, וְלֹא תִגְּעוּ בּוֹ:  פֶּן-תְּמֻתוּן', #3
+            'וַיֹּאמֶר הַנָּחָשׁ, אֶל-הָאִשָּׁה:  לֹא-מוֹת, תְּמֻתוּן', #4
+            'כִּי, יֹדֵעַ אֱלֹהִים, כִּי בְּיוֹם אֲכָלְכֶם מִמֶּנּוּ, וְנִפְקְחוּ עֵינֵיכֶם; וִהְיִיתֶם, כֵּאלֹהִים, יֹדְעֵי, טוֹב וָרָע', #5
+            'וַתֵּרֶא הָאִשָּׁה כִּי טוֹב הָעֵץ לְמַאֲכָל וְכִי תַאֲוָה-הוּא לָעֵינַיִם, וְנֶחְמָד הָעֵץ לְהַשְׂכִּיל, וַתִּקַּח מִפִּרְיוֹ, וַתֹּאכַל; וַתִּתֵּן גַּם-לְאִישָׁהּ עִמָּהּ, וַיֹּאכַל', #6
+            'וַתִּפָּקַחְנָה, עֵינֵי שְׁנֵיהֶם, וַיֵּדְעוּ, כִּי עֵירֻמִּם הֵם; וַיִּתְפְּרוּ עֲלֵה תְאֵנָה, וַיַּעֲשׂוּ לָהֶם חֲגֹרֹת', #7
+            'וַיִּשְׁמְעוּ אֶת-קוֹל יְהוָה אֱלֹהִים, מִתְהַלֵּךְ בַּגָּן–לְרוּחַ הַיּוֹם; וַיִּתְחַבֵּא הָאָדָם וְאִשְׁתּוֹ, מִפְּנֵי יְהוָה אֱלֹהִים, בְּתוֹךְ, עֵץ הַגָּן', #8
+            'וַיִּקְרָא יְהוָה אֱלֹהִים, אֶל-הָאָדָם; וַיֹּאמֶר לוֹ, אַיֶּכָּה', #9
+            'וַיֹּאמֶר, אֶת-קֹלְךָ שָׁמַעְתִּי בַּגָּן; וָאִירָא כִּי-עֵירֹם אָנֹכִי, וָאֵחָבֵא', #10
+            'וַיֹּאמֶר–מִי הִגִּיד לְךָ, כִּי עֵירֹם אָתָּה; הֲמִן-הָעֵץ, אֲשֶׁר צִוִּיתִיךָ לְבִלְתִּי אֲכָל-מִמֶּנּוּ–אָכָלְתָּ', #11
+            'וַיֹּאמֶר, הָאָדָם:  הָאִשָּׁה אֲשֶׁר נָתַתָּה עִמָּדִי, הִוא נָתְנָה-לִּי מִן-הָעֵץ וָאֹכֵל', #12
+            'וַיֹּאמֶר יְהוָה אֱלֹהִים לָאִשָּׁה, מַה-זֹּאת עָשִׂית; וַתֹּאמֶר, הָאִשָּׁה, הַנָּחָשׁ הִשִּׁיאַנִי, וָאֹכֵל', #13
+            'וַיֹּאמֶר יְהוָה אֱלֹהִים אֶל-הַנָּחָשׁ כִּי עָשִׂיתָ זֹּאת אָרוּר אַתָּה מִכָּל-הַבְּהֵמָה וּמִכֹּל חַיַּת הַשָּׂדֶה עַל-גְּחֹנְךָ תֵלֵךְ וְעָפָר תֹּאכַל כָּל-יְמֵי חַיֶּיךָ', #14
+            'וְאֵיבָה אָשִׁית בֵּינְךָ וּבֵין הָאִשָּׁה וּבֵין זַרְעֲךָ וּבֵין זַרְעָהּ  הוּא יְשׁוּפְךָ רֹאשׁ וְאַתָּה תְּשׁוּפֶנּוּ עָקֵב', #15
+            'אֶל-הָאִשָּׁה אָמַר הַרְבָּה אַרְבֶּה עִצְּבוֹנֵךְ וְהֵרֹנֵךְ בְּעֶצֶב תֵּלְדִי בָנִים וְאֶל-אִישֵׁךְ תְּשׁוּקָתֵךְ וְהוּא יִמְשָׁל-בָּךְ', #16
+            'וּלְאָדָם אָמַר כִּי-שָׁמַעְתָּ לְקוֹל אִשְׁתֶּךָ וַתֹּאכַל מִן-הָעֵץ אֲשֶׁר צִוִּיתִיךָ לֵאמֹר לֹא תֹאכַל מִמֶּנּוּ אֲרוּרָה הָאֲדָמָה בַּעֲבוּרֶךָ בְּעִצָּבוֹן תֹּאכְלֶנָּה כֹּל יְמֵי חַיֶּיךָ', #17
+            'וְקוֹץ וְדַרְדַּר תַּצְמִיחַ לָךְ וְאָכַלְתָּ אֶת-עֵשֶׂב הַשָּׂדֶה', #18
+            'בְּזֵעַת אַפֶּיךָ תֹּאכַל לֶחֶם עַד שׁוּבְךָ אֶל-הָאֲדָמָה כִּי מִמֶּנָּה לֻקָּחְתָּ  כִּי-עָפָר אַתָּה וְאֶל-עָפָר תָּשׁוּב', #19
+            'וַיִּקְרָא הָאָדָם שֵׁם אִשְׁתּוֹ חַוָּה  כִּי הִוא הָיְתָה אֵם כָּל-חָי', #20
+            'וַיַּעַשׂ יְהוָה אֱלֹהִים לְאָדָם וּלְאִשְׁתּוֹ כָּתְנוֹת עוֹר וַיַּלְבִּשֵׁם', #21
+            'וַיֹּאמֶר יְהוָה אֱלֹהִים הֵן הָאָדָם הָיָה כְּאַחַד מִמֶּנּוּ לָדַעַת טוֹב וָרָע וְעַתָּה פֶּן-יִשְׁלַח יָדוֹ וְלָקַח גַּם מֵעֵץ הַחַיִּים וְאָכַל וָחַי לְעֹלָם', #22
+            'וַיְשַׁלְּחֵהוּ יְהוָה אֱלֹהִים מִגַּן-עֵדֶן לַעֲבֹד אֶת-הָאֲדָמָה אֲשֶׁר לֻקַּח מִשָּׁם', #23
+            'וַיְגָרֶשׁ אֶת-הָאָדָם וַיַּשְׁכֵּן מִקֶּדֶם לְגַן-עֵדֶן אֶת-הַכְּרֻבִים וְאֵת לַהַט הַחֶרֶב הַמִּתְהַפֶּכֶת לִשְׁמֹר אֶת-דֶּרֶךְ עֵץ הַחַיִּים' #24
+        ],
+        'phonetics': [
+            'Vehanajásh hayáh ‘arum mikol jayat hasadéh ‘asher ‘asáh Hashem ‘Elohim vayo’mer ‘el-ha’isháh ‘af ki-‘amar ‘Elohim lo’ to’jlú mikol ‘ets hagán.', #1
+            'Vato’mer ha’isháh ‘el-hanajásh miprí ‘ets-hagán no’jel.', #2
+            'Umiprí ha’ets ‘asher betoj-hagán amar ‘Elohim lo tojlú mimenu veló’ tig’ú bo’ pen temutún.', #3
+            'Vayo’mer hanajásh ‘el-ha’isháh lo’ mot temutún.', #4
+            'Ki yode’a ‘Elohim ki beyóm ‘ajoljém miménu venifqejú ‘eyneyjém vihyitém ke’Elohim yod’ey tov vará’.', #5
+            'Vatere’ ha’isháh ki tov ha’ets lema’ajal vejí ta’aváh-hu’ la’eynáyim venejmad ha’ets lehaskil vatiqaj mipiryo vato’jal vatiten gam-le’isháh imáh vayo’jal.', #6
+            'Vatipaqajnáh ‘eyney shnéyhem vayed’ú ki ‘eyrumim jem vayitperú ‘aleh te’enáh vaya’asú lajem jagorot.', #7
+            'Vayishme’ú ‘et-qol Hashem ‘Elohim mithalej bagan le-ruaj hayom vayitjabé’ ha’adam ve’ishtó mipney Hashem ‘Elohim betoj ‘ets hagán.', #8
+            'Vayiqrá’ Hashem ‘Elohim ‘el-ha’adam vayo’mer lo ‘ayekah.', #9
+            'Vayo’mer ‘et-qoljá shama’eti bagán va’irá’ ki-‘eyrom ‘anoji va’ejavé.', #10
+            'Vayó’mer mi higid lejá ki ‘eyrom ‘atáh hamín-ha’ets ‘asher tsivitija leviltí ‘ajol-mimenu ajalta.', #11
+            'Vayó’mer ha’adam ha’isháh ‘asher natátah imadí hi’ natnah-lí min-ha’éts va’ojel.', #12
+            'Vayó’mer Hashem ‘Elohim la’isháh mah-zo’t ‘asit vató’mer ha’isháh hanajásh hishi’ani va’ojel.', #13
+            'Vayomer Hashem ‘Elohim el-hanajash ki ‘ashita zo’t arur ‘atah mikol-habehemah umikol jayat hashadeh ‘al-gejoneja telej veafar to’jal kol-yemey jayeyja.', #14
+            'Ve’eyvah ‘ashit beynja uveyn ha’ishah uveyn zar’aja uveyn zar’ah hu’ yeshufja ro’sh ve’atah teshupenu ‘aqev.', #15
+            'El-ha’ishah ‘amar harbah ‘arbeh ‘itzvonej veheronej be’etzev teldi vanim ve’el-‘ishej teshuqatej vehu’ yimshal-baj.', #16
+            'Ule’adam ‘amar ki-shama’ta leqol ishteja vato’jal min-ha’etz ‘asher tzivitija le’mor lo’ to’jal mimenu ‘arurah ha’adamah ba’avureja be’itzavon to’jlenah kol yemey.', #17
+            'Veqotz vedardar tatzmiaj laj ve’ajalta ‘et-‘esev hashadeh', #18
+            'beze’at ‘apeyja to’jal lejem ‘ad shuvja ‘el-ha’adamah ki mimenah luqajta ki-‘afar ‘atah ve’el-‘afar tashuv.', #19
+            'Vayiqra’ ha’adam shem ‘ishto javah ki hi’ haytah ‘em kol-jay.', #20
+            'Vaya’as Hashem ‘Elohim le’adam ule’ishto katnot ‘or vayalbishem.', #21
+            'Vayo’mer Hashem ‘Elohim hen ha’adam hayah ke’ajad mimenu lada’at tov vara’ ve’atah pen-yishlaj yado velaqaj gam me’etz hajayim ve’ajal vajay le’olam', #22
+            'Vayeshaljehu Hashem ‘Elohim migan-‘eden la’avod ‘et ha’adamah asher luqaj misham.', #23
+            'Vaygaresh ‘et-ha’adam vayashken miqedem legan-‘eden ‘et-hakeruvim ve’et lahat hajerev hamithapejet lishmor ‘et-derej ‘etz hajayim.' #24
+        ]
     }
 
 }
@@ -189,6 +271,12 @@ bereshit_cont = {
 
 
 """
+'cap_3': {
+        'spanish': [],
+        'hebrew': [],
+        'phonetics': []
+    }
+
 '', #1
 '', #2
 '', #3
