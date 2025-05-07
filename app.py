@@ -18,6 +18,11 @@ def bereshit():
     return render_template('bereshit.html', español=spanish_verses, hebreo=hebrew_verses, fonetica=phonetics_verses)
 
 
+@app.route('/tefilot')
+def tefilot():
+    return render_template('tefilot.html')
+
+
 @app.route('/alef-bet')
 def alphabet():
     return render_template('alphabet.html')

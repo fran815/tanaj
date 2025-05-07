@@ -19,13 +19,34 @@ a {
 
 /* MENU HEADER */
 .profile-header {
-    display: none;
+    display: grid;
 }
 .menu-img-div {
-    display: none;
+    display: block;
 }
+
+.mag-david-img {
+    display: block;
+    background-image: url(/static/css/imgs/magen-david.png);
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+}
+.menu-img-div {
+    display: block;
+    background-image: url(/static/css/imgs/menu-black.png);
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
 hr {
-    display: none;
+    display: block;
 }
 .main-menu-div {
     width: 35%;

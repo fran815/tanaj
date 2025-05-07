@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tefilot_layout.css') }}">
+    <title>תְּפִלּוֹת</title>
+</head>
+<body>
+    <div class="main-body-div">
+        
+        <div class="main-header">
+            <div class="menu-div">
+                <div class="menu-img" onclick="menuDiv()"></div>
+            </div>
+            <div class="title-div">
+                <h1>תְּפִלּוֹת</h1>
+            </div>
+        </div>
+
+        <div class="index-main-menu" id="index-main-menu-id" style="display: none;">
+            <div class="menu-space">
+                <div class="menu-item">
+                    <a href="{{ url_for('index') }}" class="menu-elem">- Inicio -</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('alphabet') }}" class="menu-elem">אָלֶף־בֵּית עִבְרִי - Alfabeto</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content-center">
+                <h2>Oraciones diarias</h2>
+                <section>
+                    <p>תְּפִלָּה בֹּקֶר - Oracion matutina</p>
+                    <p class="hebrew">מוֹדֶה (מוֹדָה) אֲנִי לְפָנֶֽיךָ מֶֽלֶךְ חַי וְקַיָּים. שֶׁהֶֽחֱזַֽרְתָּ בִּי נִשְׁמָתִי בְחֶמְלָה. רַבָּה אֱמֽוּנָתֶֽךָ</p>
+                    <div class="fonet">
+                        <p>Modé aní lefaneja mélej jai vekayam shehejezarta bi nishmatí bejemlá, rabá emunateja.</p>
+                    </div>
+                    <p class="spanish">Doy gracias ante ti, Oh Rey vivo y eterno, por haberme devuelto bondadosamente el alma; grande es mi confianza en Ti.</p>
+                    <br>
+                </section>
+
+                <hr>
+
+                <section>
+                    <p>רִבּוֹנוֹ שֶׁל עוֹלָם - Señor del universo</p>
+                    <p class="hebrew">רִבּוֹנוֹ שֶׁל עוֹלָם
+                        הֲרֵינִי מוֹחֵל
+                        לְכָל מִי שֶׁהִכְעִיס וְהִקְנִיט אוֹתִי
+                        אוֹ
+                        שֶׁחָטָא כְּנֶגְדִּי
+                        בֵּין בְּגוּפִי בֵּין בְּמָמוֹנִי
+                        בֵּין בִּכְבוֹדִי בֵּין בְּכָל אֲשֶׁר לִי
+                        בֵּין בְּאוֹנֶס בֵּין בְּרָצוֹן
+                        בֵּין בְּשׁוֹגֵג בֵּין בְּמֵזִיד בֵּין בְּמַחֲשָׁבָה בֵּין בְּדִבּוּר בֵּין בְּמַעֲשֶׂה.
+                        בֵּין בְּגִלְגּוּל זֶה
+                        בֵּין בְּגִלְגּוּל אַחֵר
+                        לְכָל בַּר יִשְׂרָאֵל וְלֹא יֵעָנֵשׁ
+                        שׁוּם אָדָם בְּסִבָּתִי.
+                        
+                        יְהִי רָצוֹן מִלְּפָנֶיךָ
+                        אֲדֹנָי אֱלֹהַי
+                        וֵאלֹהֵי אֲבוֹתַי
+                        שֶׁלֹּא אֶחְטָא עוֹד
+                        וְלֹא אֶחֱזוֹר
+                        בָּהֶם
+                        וְלֹא אָשׁוּב עוֹד
+                        לְהַכְעִיסֶךָ
+                        וְלֹא אֶעֱשֶׂה
+                        הָרַע בְּעֵינֶיךָ.
+                        
+                        וּמַה שֶׁחָטָאתִי
+                        לְפָנֶיךָ מְחוֹק
+                        בְּרַחֲמֶיךָ הָרַבִּים
+                        אֲבָל לֹא עַל יְדֵי יִסּוּרִים
+                        וָחֳלָיִם רָעִים.
+                        
+                        יִהְיוּ לְרָצוֹן
+                        אִמְרֵי־פִי
+                        וְהֶגְיוֹן
+                        לִבִּי
+                        לְפָנֶיךָ
+                        יְהוָה צוּרִי וְגֹאֲלִי</p>
+                    <div class="fonet">
+                        <p>Modé aní lefaneja mélej jai vekayam shehejezarta bi nishmatí bejemlá, rabá emunateja.</p>
+                    </div>
+                    <p class="spanish">Ribono Shel Olam,
+                        perdono
+                        a quien me haya hecho daño
+                        y a quien me haya hecho
+                        daño,
+                        ya sea
+                        intencionalmente o por accidente, con palabras o con obras,
+                        en esta encarnación o en las anteriores. Que nadie sea castigado por mi culpa.
+                        
+                        Sea tu voluntad,
+                        oh Dios mío,
+                        Dios de mis padres,
+                        que no peque más,
+                        que no vuelva
+                        a mis viejos caminos,
+                        que no te enoje más
+                        con mis acciones,
+                        que no haga lo
+                        que es malo ante tus ojos.
+                        
+                        Limpia los pecados
+                        que he cometido,
+                        con tu gran compasión,
+                        pero no a través de
+                        la enfermedad o el sufrimiento.
+                        
+                        Sean aceptables delante de ti, oh Señor, Roca mía y Redentor, estas palabras
+                        de mi boca
+                        y las oraciones
+                        de mi corazón.
+                    </p>
+                    <br>
+                </section>
+
+                <hr>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    function menuDiv() {
+        var mainMenu = document.getElementById('index-main-menu-id');
+
+        if (mainMenu.style.display == 'none') {
+            mainMenu.style.display = 'flex';
+        }
+        else {
+            mainMenu.style.display = 'none';
+        }
+    }
+</script>
+
+</html>
