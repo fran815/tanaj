@@ -107,13 +107,13 @@ h1 {
 /* TEXTS */
 .hebrew {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
 .fonet {
-    display: none;
+    /* display: none; */
 
     font-family: cursive;
-    color: rgb(156, 0, 0);
+    color: rgb(2, 2, 189);
 }
 .spanish {
     color: white;
