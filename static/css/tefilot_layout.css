@@ -17,9 +17,9 @@ body {
     width: 100%;
     z-index: 1;
 
-    background: #bdc3c7; 
-    background: -webkit-linear-gradient(to left, #2c3e50ab, #bdc3c700); 
-    background: linear-gradient(to left, #2c3e501e, #bdc3c700);
+    background: #3d3d3d; 
+    background: -webkit-linear-gradient(to left, #696969ab, #bdc3c700); 
+    background: linear-gradient(to left, #4949491e, #bdc3c700);
 }
 
 .menu-div {
@@ -77,7 +77,43 @@ h1 {
 
     font-size: 22px;
 }
+/* radio buttons */
+.fonet-label {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-left: 25px;
+    margin-right: 10px;
 
+    color: white;
+}
+.radio-div {
+    display: inline-flex;
+    /* width: 200px; */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.radio-input {
+    display: none;
+}
+.radio-label {
+    width: 40px;
+    text-align: center;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: black;
+    background: rgba(255, 255, 255, 0.219);
+    cursor: pointer;
+    transition: background 0.1s;
+}
+.radio-label:not(:last-of-type) {
+    border-right: 1px solid gray;
+}
+.radio-input:checked + .radio-label {
+    background: black;
+    color: white;
+}
 
 /* MAIN CONTENT */
 .main-content {
@@ -108,12 +144,13 @@ h1 {
 .hebrew {
     font-weight: bold;
     font-size: 24px;
+    color: white;
 }
 .fonet {
-    /* display: none; */
+    display: none;
 
     font-family: cursive;
-    color: rgb(2, 2, 189);
+    color: white;
 }
 .spanish {
     color: white;
@@ -143,8 +180,8 @@ h1 {
     /* MENU-DIV-AREA */
     .index-main-menu {
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.185);
+        /* height: 100%; */
+        /* background-color: rgba(0, 0, 0, 0.185); */
         backdrop-filter: blur(1px);
         align-items: center;
         z-index: 10;
@@ -157,6 +194,13 @@ h1 {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* RADIO DIV */
+    .fonet-label {
+        display: none;
+    }
+    .radio-label {
+        font-size: 10px;
     }
 
 

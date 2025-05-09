@@ -13,6 +13,15 @@
             <div class="menu-div">
                 <div class="menu-img" onclick="menuDiv()"></div>
             </div>
+            <!-- RADIO BUTTONS -->
+            <p class="fonet-label">Fonetica</p>
+            <div class="radio-div">
+                <input type="radio" class="radio-input" value="mirar" name="myRadio" id="radio1" onclick="toWatch()">
+                <label for="radio1" class="radio-label">On</label>
+
+                <input type="radio" class="radio-input" value="ocultar" name="myRadio" id="radio2" onclick="toUnwatch()" checked>
+                <label for="radio2" class="radio-label">Off</label>
+            </div>
             <div class="title-div">
                 <h1>תְּפִלּוֹת</h1>
             </div>
@@ -31,11 +40,11 @@
 
         <div class="main-content">
             <div class="content-center">
-                <h2>Oraciones diarias</h2>
+                <!-- <h2>Oraciones diarias</h2> -->
                 <section>
-                    <p>תְּפִלָּה בֹּקֶר - Oracion matutina</p>
+                    <p style="font-weight: bold;">תְּפִלָּה בֹּקֶר - Oracion matutina</p>
                     <p class="hebrew">מוֹדֶה (מוֹדָה) אֲנִי לְפָנֶֽיךָ מֶֽלֶךְ חַי וְקַיָּים. שֶׁהֶֽחֱזַֽרְתָּ בִּי נִשְׁמָתִי בְחֶמְלָה. רַבָּה אֱמֽוּנָתֶֽךָ</p>
-                    <div class="fonet">
+                    <div class="fonet" id="fonet">
                         <p>Modé aní lefaneja mélej jai vekayam shehejezarta bi nishmatí bejemlá, rabá emunateja.</p>
                     </div>
                     <p class="spanish">Doy gracias ante ti, Oh Rey vivo y eterno, por haberme devuelto bondadosamente el alma; grande es mi confianza en Ti.</p>
@@ -45,7 +54,7 @@
                 <hr>
 
                 <section>
-                    <p>שְׁמַע יִשְׂרָאֵל - Oye Israel</p>
+                    <p style="font-weight: bold;">שְׁמַע יִשְׂרָאֵל - Oye Israel</p>
                     <p class="hebrew">
                         שְׁמַע יִשְׂרָאֵל, יְהֹוָה אֱלהֵינוּ, יְהֹוָה אֶחָד בָּרוּךְ
                         <br>שֵׁם כְּבוד מַלְכוּתו, לְעולָם וָעֶד
@@ -53,7 +62,7 @@
                         <br>וְשִׁנַּנְתָּם לְבָנֶיךָ וְדִבַּרְתָּ בָּם. בְּשִׁבְתְּךָ בְּבֵיתֶךָ וּבְלֶכְתְּךָ בַדֶּרֶךְ וּבְשָׁכְבְּךָ וּבְקוּמֶךָ: וּקְשַׁרְתָּם לְאות עַל יָדֶךָ. וְהָיוּ לְטטָפת בֵּין
                         <br>עֵינֶיךָ: וּכְתַבְתָּם עַל מְזֻזות בֵּיתֶךָ וּבִשְׁעָרֶיךָ
                     </p>
-                    <div class="fonet">
+                    <div class="fonet" id="fonet">
                         <p>
                             Shemá Israel Adonai Elohéinu Adonái Ejád.<br>
                             Barúj Shem Kevód Maljutó Leolám Vaéd.<br>
@@ -71,7 +80,7 @@
                 <hr>
 
                 <section>
-                    <p>רִבּוֹנוֹ שֶׁל עוֹלָם - Señor del universo</p>
+                    <p style="font-weight: bold;">רִבּוֹנוֹ שֶׁל עוֹלָם - Señor del universo</p>
                     <p class="hebrew">רִבּוֹנוֹ שֶׁל עוֹלָם
                         הֲרֵינִי מוֹחֵל
                         לְכָל מִי שֶׁהִכְעִיס וְהִקְנִיט אוֹתִי
@@ -110,7 +119,30 @@
                         לְפָנֶיךָ
                         יְהוָה צוּרִי וְגֹאֲלִי</p>
                     <div class="fonet">
-                        <p>(En proceso...)</p>
+                        <p>
+                            Ribbonó shel ölam hareni
+                            mojel vesoléaj lejol
+                            mi shehijïs vehiknit
+                            otí o shejatá
+                            kenegdí ben begufí
+                            ben bemamoní ben bijvodí ben
+                            bejol asher li ben beones
+                            ben beratzón ben beshogueg ben bemezid ben bedibbur
+                            ben bemaäsé ben beguilgul ze ben beguilgul
+                            ajer lejol bar
+                            israel veló ieänesh
+                            shum adam besibbatí
+                            iehí ratzón mil´lefaneja
+                            ado-nai elo-hai ve´elo-hé
+                            avotai shel´ló ejetá
+                            öd umá shejatati lefaneja
+                            mejok berrajameja harabbim
+                            aval lo äl iedé issurín
+                            vejolaim raïm ihiú
+                            leratzón imré-fi vehegión
+                            libbí lefaneja ado-nai
+                            tzurí vegoalí
+                        </p>
                     </div>
                     <p class="spanish">Señor del universo,
                         perdono
@@ -165,6 +197,30 @@
             mainMenu.style.display = 'none';
         }
     }
+
+    // PHONETIC LABELS
+    function toWatch() {
+        var mySelection = document.getElementById('radio1');
+        var myLabelToWatch = document.getElementsByClassName('fonet');
+        
+        if (mySelection="mirar") {
+            for (let i = 0; i < myLabelToWatch.length; i++) {
+                myLabelToWatch[i].style.display = "block";
+            }
+        }
+    }
+
+    function toUnwatch() {
+        var mySelection = document.getElementById('radio2');
+        var myLabelToWatch = document.getElementsByClassName('fonet');
+        
+        if (mySelection="ocultar") {
+            for (let i = 0; i < myLabelToWatch.length; i++) {
+                myLabelToWatch[i].style.display = "none";
+            }
+        }
+    }
+
 </script>
 
 </html>
