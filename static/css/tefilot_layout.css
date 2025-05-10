@@ -5,7 +5,7 @@ body {
     height: 100dvh;
     margin: 0;
 
-    backdrop-filter: blur(0px);
+    /* backdrop-filter: blur(0px); */
 }
 
 
@@ -56,6 +56,8 @@ h1 {
     justify-content: center;
     width: 20%;
     height: 70%;
+    top: 100px;
+    left: 0;
     z-index: 10;
 }
 .menu-space {
@@ -103,7 +105,7 @@ h1 {
     font-size: 12px;
     font-family: sans-serif;
     color: black;
-    background: rgba(255, 255, 255, 0.219);
+    background: rgba(255, 255, 255, 0.349);
     cursor: pointer;
     transition: background 0.1s;
 }
@@ -116,27 +118,34 @@ h1 {
 }
 
 /* MAIN CONTENT */
+.main-body-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .main-content {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     height: 750px;
     overflow-y: scroll;
-    scrollbar-color: gray transparent;
-    /* background-color: red; */
+    scrollbar-color: rgba(128, 128, 128, 0.719) transparent;
+
+    /* From https://css.glass */
+    background: rgba(145, 145, 145, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
 }
 .content-center {
-    width: 70%;
+    width: 95%;
     text-align: center;
     font-family: sans-serif;
 
-    /* background-color: gray; */
-    /* background: rgba(255, 255, 255, 0.205);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.07); */
+    
 }
 
 
@@ -144,7 +153,7 @@ h1 {
 .hebrew {
     font-weight: bold;
     font-size: 24px;
-    color: white;
+    color: black;
 }
 .fonet {
     display: none;
@@ -159,9 +168,13 @@ h1 {
 
 /* RESPOSIVE */
 @media (max-width:500px) {
+    body {
+        backdrop-filter: blur(1.2px);
+    }
     .main-header {
         height: 70px;
         background-color: rgba(0, 0, 0, 0.3);
+        z-index: 100;
     }
     h1 {
         font-size: 52px;
@@ -179,12 +192,13 @@ h1 {
     }
     /* MENU-DIV-AREA */
     .index-main-menu {
+        top: 0;
         width: 100%;
-        /* height: 100%; */
-        /* background-color: rgba(0, 0, 0, 0.185); */
+        height: 100%;
+        
+        background-color: rgba(0, 0, 0, 0.185);
         backdrop-filter: blur(1px);
         align-items: center;
-        z-index: 10;
     }
     .menu-space {
         width: 90%;
@@ -208,10 +222,23 @@ h1 {
     .main-content {
         height: 550px;
         overflow-y: scroll;
+        width: 90%;
+
+        margin-top: 30px;
+
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border: 0px solid transparent;
     }
     .content-center {
-        width: 90%;
+        width: 95%;
         background-color: transparent;
         border: none;
+    }
+    .hebrew {
+        color: black;
     }
 }   
