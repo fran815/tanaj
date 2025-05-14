@@ -48,6 +48,30 @@ shemot_cont = {
             'וַיֵּ֥יטֶב אֱלֹהִ֖ים לַֽמְיַלְּדֹ֑ת וַיִּ֧רֶב הָעָ֛ם וַיַּֽעַצְמ֖וּ מְאֹֽד', #20
             'וַיְהִ֕י כִּֽי־יָֽרְא֥וּ הַֽמְיַלְּדֹ֖ת אֶת־הָאֱלֹהִ֑ים וַיַּ֥עַשׂ לָהֶ֖ם בָּתִּֽים', #21
             'וַיְצַ֣ו פַּרְעֹ֔ה לְכָל־עַמּ֖וֹ לֵאמֹ֑ר כָּל־הַבֵּ֣ן הַיִּלּ֗וֹד הַיְאֹ֙רָה֙ תַּשְׁלִיכֻ֔הוּ וְכָל־הַבַּ֖ת תְּחַיּֽוּן', #22
+        ],
+        'phonetics': [
+            "Ve'eleh shemot beney Yisra'el haba'im Mitsraymah et Ya'akov ish uveyto ba'u.", #1
+            "Re'uven Shim'on Levi viYehudah.", #2
+            "Isajar Zvulun uVinyamin.", #3
+            "Dan veNaftali Gad ve'Asher.", #4
+            "Vayehi kol-nefesh yots'ey yerej-Ya'akov shiv'im nafesh veYosef hayah veMitsrayim.", #5
+            "Vayamot Yosef vejol-ejav vejol hador hahu.", #6
+            "Uveney Yisra'el paru vayishretsu vayirbu vaya'atsmu bime'od me'od vatimale ha'arets otam", #7
+            "Vayakom melej-jadash al-Mitsrayim asher lo-yada et-Yosef.", #8
+            "Vayomer el-amo hineh am beney Yisra'el rav ve'atsum mimenu.", #9
+            "Havah nitjakemah lo pen-yirbeh vehayah ki-tikrenah miljamah venosaf gam-hu al-sonenu veniljam-banu ve'alah min-ha'arets.", #10
+            "Vayasimu alav sarey misim lema'an anoto besivlotam vayiven arey miskenot le-Far'oh et-Pitom ve'et-Ra'amses.", #11
+            "Veja'asher ye'anu oto ken yirbeh vejen yifrots vayakutsu mipeney beney Yisra'el.", #12
+            "Vaya'avidu Mitsrayim et-beney Yisra'el befarej.", #13
+            "Vayemareru et-jayeyhem ba'avodah kashah bejomer uvilvenim uvejol-avodah basadeh et kol-avodatam asher-avdu vahem befarej.", #14
+            "Vayomer melej Mitsrayim lameyaldot ha'Ivriot asher shem ha'ajat Shifrah veshem hashenit Puah.", #15
+            "Vayomer beyaledjen et-ha'Ivriot ur'iten al-ha'ovnayim im-ben hu vahamiten oto ve'im-bat hi vajayah.", #16
+            "Vatir'ena hameyaldot et-ha'Elohim velo asu ka'asher diber aleyhen melej Mitsrayim vatejayeyna et-hayeladim.", #17
+            "Vayikra melej-Mitsrayim lameyaldot vayomer lahen madua asiten hadavar hazeh vatjayeyna et-hayeladim.", #18
+            "Vatomarna hameyaldot el-Par'oh ki lo janashim haMitsriot ha'Ivriot ki jayot henah beterem tavo alehen hameyaledet veyaladu.", #19
+            "Vayeytev Elohim lameyaleot vayirev ha'am vaya'atsmu me'od.", #20
+            "Vayehi ki yar'u hameyaldot et-ha'Elohim vaya'as lahem batim.", #21
+            "Vayetsav Par'oh lejol-amo lemor kol-haben hayilod haYe'orah tashlijuhu vejol-habat tejayun." #22
         ]
     },
 
@@ -105,6 +129,33 @@ shemot_cont = {
             'וַיְהִי֩ בַיָּמִ֨ים הָֽרַבִּ֜ים הָהֵ֗ם וַיָּ֙מָת֙ מֶ֣לֶךְ מִצְרַ֔יִם וַיֵּאָנְח֧וּ בְנֵֽי־יִשְׂרָאֵ֛ל מִן־הָעֲבֹדָ֖ה וַיִּזְעָ֑קוּ וַתַּ֧עַל שַׁוְעָתָ֛ם אֶל־הָאֱלֹהִ֖ים מִן־הָעֲבֹדָֽה', #23
             'וַיִּשְׁמַ֥ע אֱלֹהִ֖ים אֶת־נַאֲקָתָ֑ם וַיִּזְכֹּ֤ר אֱלֹהִים֙ אֶת־בְּרִית֔וֹ אֶת־אַבְרָהָ֖ם אֶת־יִצְחָ֥ק וְאֶֽת־יַעֲקֹֽב', #24
             'וַיַּ֥רְא אֱלֹהִ֖ים אֶת־בְּנֵ֣י יִשְׂרָאֵ֑ל וַיֵּ֖דַע אֱלֹהִֽים' #25
+        ],
+        'phonetics': [
+            "Vayelej ish mibeyt Levi vayikaj et-bat-Levi.", #1
+            "Vatahar ha'ishah vateled ben vatere oto ki-tov hu vatitspenehu shloshah yerajim.", #2
+            "Velo-yajlah od hatsfino vatikaj-lo tevat gome vatajmerah vajemar  uvazafet vatasem bah et-hayeled vatasem basuf al-sfat haYe'or.", #3
+            "Vatetatsav ajoto merajok lede'ah mah-ye'aseh lo.", #4
+            "Vatered bat-Par'oh lirjots al-haYe'or vena'aroteyha holjot al-yad haYe'or vatere et-hatevah betoj hasuf vatishlaj et-amatah vatikajeha.", #5
+            "Vatiftaj vatir'ehu et-hayeled vehineh na'ar bojeh vatajmol alav vatomer    miyaldey ha'Ivrim zeh.", #6
+            "Vatomer ajoto el-bat-Par'oh ha'elej vekarati laj ishah meyneket min ha'Ivriot veteynik laj et-hayaled.", #7
+            "Vatomer-lah bat-Par'oh leji vatelej ha'almah vatikra et-em hayaled.", #8
+            "Vatomer-lah bat-Par'oh heyliji et-hayeled hazeh veheynikihu li va'ani eten et-sjarej vatikaj ha'ishah hayeled vatenikehu.", #9
+            "Vayigdal hayeled vatevi'ehu levat-Par'oh vayehi-lah leven vatikra shemo Moshe vatomer ki min-hamayim meshitihu.", #10
+            "Vayehi bayamim hahem vayigdal Moshe vayetse el-ejav vayar besivlotam vayar ish Mitsri makeh ish-Ivri me'ejav.", #11
+            "Vayifen koh vajoh vayar ki eyn ish vayaj et-haMitsri vayitmenehu  bajol.", #12
+            "Vayetse bayom hasheni vehineh shney-anashim Ivrim nitsim vayomer larasha lamah takeh re'eja.", #13
+            "Vayomer mi sameja le'ish sar veshofet aleynu halehorgeni atah omer ka'asher haragta et-haMitsri vayira Moshe vayomar ajen noda hadavar.", #14
+            "Vayishma Par'oh et-hadavar hazeh vayevakesh laharog et-Moshe vayivraj Moshe mipney Far'oh vayeshev be'erets-Midyan vayeshev al-habe'er.", #15
+            "Ulejohen Midyan sheva banot vatavonah vatidlenah vatmalenah et-harehatim lehashkot tson avihen.", #16
+            "Vayavo'u haro'im vayegarshum vayakom Moshe vayoshian vayashk et-tsonam.", #17
+            "Vatavonah el-Re'u'el avihen vayomer madua miharten bo hayom.", #18
+            "Vatomarna ish Mitsri hitsilanu miyad haro'im vegam-daloh dalah lanu  vayashk et-hatson.", #19
+            "Vayomer el-benotav ve'ayo lamah zeh azavten et-ha'ish kir'en lo veyojal lajem.", #20
+            "Vayo'el Moshe lashevet et-ha'ish vayiten et-Tsiporah vito le-Moshe.", #21
+            "Vateled ben vayikra et-shemo Gershom ki amar ger hayiti be'erets nojriyah.", #22
+            "Vayehi vayamim harabim hahem vayamot melej Mitsrayim vaye'aneju veney-Yisra'el min-ha'avodah vayiz'aku vata'al shav'atam el-ha'Elohim min-ha'avodah.", #23
+            "Vayishma Elohim et-na'akatam vayizkor Elohim et-brito et-Avraham et-Yitsjak ve'et-Ya'akov.", #24
+            "Vayar Elohim et-beney Yisra'el vayeda Elohim." #25
         ]
     }
 
@@ -114,63 +165,64 @@ shemot_cont = {
 """
 'cap_x': {
         'spanish': [],
-        'hebrew': []
+        'hebrew': [],
+        'phonetics': []
     }
 
 
-'', #1
-'', #2
-'', #3
-'', #4
-'', #5
-'', #6
-'', #7
-'', #8
-'', #9
-'', #10
-'', #11
-'', #12
-'', #13
-'', #14
-'', #15
-'', #16
-'', #17
-'', #18
-'', #19
-'', #20
-'', #21
-'', #22
-'', #23
-'', #24
-'', #25
-'', #26
-'', #27
-'', #28
-'', #29
-'', #30
-'', #31
-'', #32
-'', #33
-'', #34
-'', #35
-'', #36
-'', #37
-'', #39
-'', #40
-'', #41
-'', #42
-'', #43
-'', #44
-'', #45
-'', #46
-'', #47
-'', #48
-'', #49
-'', #50
-'', #51
-'', #52
-'', #53
-'', #54
-'', #55
+"", #1
+"", #2
+"", #3
+"", #4
+"", #5
+"", #6
+"", #7
+"", #8
+"", #9
+"", #10
+"", #11
+"", #12
+"", #13
+"", #14
+"", #15
+"", #16
+"", #17
+"", #18
+"", #19
+"", #20
+"", #21
+"", #22
+"", #23
+"", #24
+"", #25
+"", #26
+"", #27
+"", #28
+"", #29
+"", #30
+"", #31
+"", #32
+"", #33
+"", #34
+"", #35
+"", #36
+"", #37
+"", #39
+"", #40
+"", #41
+"", #42
+"", #43
+"", #44
+"", #45
+"", #46
+"", #47
+"", #48
+"", #49
+"", #50
+"", #51
+"", #52
+"", #53
+"", #54
+"", #55
 
 """

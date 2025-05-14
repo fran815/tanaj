@@ -23,8 +23,9 @@ def bereshit():
 def shemot():
     spanish_verses = shemot_cont
     hebrew_verses = shemot_cont
+    phonetics_verses = shemot_cont
 
-    return render_template('shemot.html', español=spanish_verses, hebreo=hebrew_verses)
+    return render_template('shemot.html', español=spanish_verses, hebreo=hebrew_verses, fonetica=phonetics_verses)
 
 
 @app.route('/tefilot')
