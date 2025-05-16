@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mitzbot_layout.css') }}">
+    <title>מִצבוֹת</title>
+</head>
+<body>
+    <div class="main-body-div">
+        
+        <div class="main-header">
+            <div class="menu-div">
+                <div class="menu-img" onclick="menuDiv()"></div>
+            </div>
+            <!-- RADIO BUTTONS -->
+            <p class="fonet-label">Fonetica</p>
+            <div class="radio-div">
+                <input type="radio" class="radio-input" value="mirar" name="myRadio" id="radio1" onclick="toWatch()">
+                <label for="radio1" class="radio-label">On</label>
+
+                <input type="radio" class="radio-input" value="ocultar" name="myRadio" id="radio2" onclick="toUnwatch()" checked>
+                <label for="radio2" class="radio-label">Off</label>
+            </div>
+            <div class="title-div">
+                <h1>מִצבוֹת</h1>
+            </div>
+        </div>
+
+        <div class="index-main-menu" id="index-main-menu-id" style="display: none;">
+            <div class="menu-space">
+                <div class="menu-item">
+                    <a href="{{ url_for('index') }}" class="menu-elem">- Inicio -</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('tefilot') }}" class="menu-elem">תְּפִלּוֹת - Oraciones</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('alphabet') }}" class="menu-elem">אָלֶף־בֵּית עִבְרִי - Alfabeto</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content-center">
+                <!-- <h2>Oraciones diarias</h2> -->
+                <section>
+                    <p style="font-weight: bold;">א</p>
+                    <p class="hebrew">שְׁפַת עַדֵּם</p>
+                    <div class="fonet" id="fonet">
+                        <p>Shafat Adim</p>
+                    </div>
+                    <p class="spanish">No adorar ídolos</p>
+                    <p class="spanish">
+                        Saber que existe un solo Dios, Infinito y Supremo sobre todas las cosas. No remplaces al Ser Supremo por ídolos limitados, ya sean de otros seres, o mismo tú. Incluidos en este mandamiento se encuentran la plegaria, el estudio y la meditación.
+                    </p>
+                    <br>
+                </section>
+
+
+                <section>
+                    <p style="font-weight: bold;">ב</p>
+                    <p class="hebrew">לֹא יִפְרְצוּ</p>
+                    <div class="fonet" id="fonet">
+                        <p>Lo Yifretzu</p>
+                    </div>
+                    <p class="spanish">No blasfemar</p>
+                    <p class="spanish">
+                        Respetar al Creador. Por más frustrado o enojado que pudieses estar, jamás expreses tales sentimientos maldiciendo al Creador.
+                    </p>
+                    <br>
+                </section>
+
+
+                <section>
+                    <p style="font-weight: bold;">ג</p>
+                    <p class="hebrew">לֹא יִשְׁפְּחֹ</p>
+                    <div class="fonet" id="fonet">
+                        <p>Lo Yishpachot</p>
+                    </div>
+                    <p class="spanish">No asesinar</p>
+                    <p class="spanish">
+                        No cometer asesinato. Cada ser humano, al igual que Adam (Adán) y Javá (Eva), constituyen un mundo entero. Salvar una vida es salvar un mundo entero. Destruir una vida es destruir un mundo. Ayudar a otros a vivir es un corolario de este principio.
+                    </p>
+                    <br>
+                </section>
+
+
+                <section>
+                    <p style="font-weight: bold;">ד</p>
+                    <p class="hebrew">לֹא יַגְּבָחוּ</p>
+                    <div class="fonet" id="fonet">
+                        <p>Lo Yagbahu</p>
+                    </div>
+                    <p class="spanish">No cometer inmoralidad sexual</p>
+                    <p class="spanish">
+                        Respetar la institución del matrimonio. El matrimonio es un acto divino. La unión de un hombre y una mujer es el reflejo de la unidad de Dios y Su creación. La deshonestidad en el matrimonio es una violación de esa Unidad.
+                    </p>
+                    <br>
+                </section>
+
+
+                <section>
+                    <p style="font-weight: bold;">ה</p>
+                    <p class="hebrew">לֹא יָגְבָחוּ</p>
+                    <div class="fonet" id="fonet">
+                        <p>Lo Yagahu</p>
+                    </div>
+                    <p class="spanish">No robar</p>
+                    <p class="spanish">
+                        No robar. Condúcete honestamente en todas tus transacciones. Confiando en Dios y no en nuestra auto indulgencia, expresamos nuestra fe en Él como Proveedor de la Vida.
+                    </p>
+                    <br>
+                </section>
+
+
+                <section>
+                    <p style="font-weight: bold;">ו</p>
+                    <p class="hebrew">לֹא יִפְרָצוּ</p>
+                    <div class="fonet" id="fonet">
+                        <p>Lo Yifretzu</p>
+                    </div>
+                    <p class="spanish">No comer carne de animal vivo</p>
+                    <p class="spanish">
+                        Respetar a las criaturas de Dios. En los albores de la creación el hombre era el jardinero del Jardín del Edén, "para trabajarlo y protegerlo". Al principio, el hombre tenía prohibido causar daño a los animales. Después del gran diluvio, se le permitió consumir carne, pero con una advertencia: No causar sufrimiento innecesario a animal alguno.
+                    </p>
+                    <br>
+                </section>
+
+
+                <section>
+                    <p style="font-weight: bold;">ז</p>
+                    <p class="hebrew">לֹא יַגְּבָחוּ</p>
+                    <div class="fonet" id="fonet">
+                        <p>Lo Yagbahu</p>
+                    </div>
+                    <p class="spanish">Establecer tribunales de justicia</p>
+                    <p class="spanish">
+                        Mantener la justicia. La justicia es asunto de Dios, pero a nosotros se nos ha encomendado instituir las leyes necesarias y hacerlas respetar siempre que podamos. Cuando corregimos los errores de la sociedad, actuamos como socios en el acto de sustentar la creación.
+                    </p>
+                    <br>
+                </section>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    function menuDiv() {
+        var mainMenu = document.getElementById('index-main-menu-id');
+
+        if (mainMenu.style.display == 'none') {
+            mainMenu.style.display = 'flex';
+        }
+        else {
+            mainMenu.style.display = 'none';
+        }
+    }
+
+    // PHONETIC LABELS
+    function toWatch() {
+        var mySelection = document.getElementById('radio1');
+        var myLabelToWatch = document.getElementsByClassName('fonet');
+        
+        if (mySelection="mirar") {
+            for (let i = 0; i < myLabelToWatch.length; i++) {
+                myLabelToWatch[i].style.display = "block";
+            }
+        }
+    }
+
+    function toUnwatch() {
+        var mySelection = document.getElementById('radio2');
+        var myLabelToWatch = document.getElementsByClassName('fonet');
+        
+        if (mySelection="ocultar") {
+            for (let i = 0; i < myLabelToWatch.length; i++) {
+                myLabelToWatch[i].style.display = "none";
+            }
+        }
+    }
+
+</script>
+
+</html>

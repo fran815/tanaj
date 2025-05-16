@@ -246,10 +246,10 @@ hr {
 .td-1 {width: 50%;}
 .td-2 {
     width: 50%;
-    font-size: 22px;
+    font-size: 27px;
 }
 .td-3 {
-    font-family: cursive;
+    /* font-family: cursive; */
     /* color: rgb(175, 3, 3); */
     color: rgb(88, 26, 26);
 }
@@ -283,7 +283,7 @@ hr {
 
 
     .td-2 {
-        font-size: 23px;
+        font-size: 26px;
     }
 
 }

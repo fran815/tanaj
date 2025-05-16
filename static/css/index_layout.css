@@ -120,7 +120,8 @@ h1 {
     width: 350px;
 
     border-radius: 7px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    border: 3px solid rgb(161, 139, 13);
     transition: 0.3s;
 }
 .card-div:hover {
@@ -231,7 +232,8 @@ a {
         width: 100%;
     
         border-radius: 7px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
+        /* border: 1px solid rgba(0, 0, 0, 0.3); */
+        border: 2px solid rgb(161, 139, 13);
     }
     .text-resp {
         display: flex;

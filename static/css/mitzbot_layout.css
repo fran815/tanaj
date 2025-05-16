@@ -1,5 +1,5 @@
 body {
-    background-image: url(/static/css/img/israel-desierto.jpg);
+    background-image: url(/static/css/img/sky.jpg);
     background-size: cover;
     background-position: center;
     height: 100dvh;
@@ -132,11 +132,11 @@ h1 {
     scrollbar-color: rgba(128, 128, 128, 0.719) transparent;
 
     /* From https://css.glass */
-    background: rgba(145, 145, 145, 0.25);
+    background: rgba(114, 114, 114, 0.25);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     
 }
@@ -153,15 +153,17 @@ h1 {
 .hebrew {
     font-weight: bold;
     font-size: 27px;
-    color: black;
+    color: rgb(148, 129, 21);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
 }
 .fonet {
     display: none;
 
-    color: white;
+    color: black;
 }
 .spanish {
-    color: white;
+    color: black;
 }
 
 
@@ -238,7 +240,9 @@ h1 {
         border: none;
     }
     .hebrew {
-        color: black;
         font-size: 26px;
+        color: rgb(148, 129, 21);
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: black;
     }
 }   

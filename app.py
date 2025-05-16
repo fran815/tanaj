@@ -33,6 +33,11 @@ def tefilot():
     return render_template('tefilot.html')
 
 
+@app.route('/mitzbot')
+def mitzbot():
+    return render_template('mitzbot.html')
+
+
 @app.route('/alef-bet')
 def alphabet():
     return render_template('alphabet.html')
