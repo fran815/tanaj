@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/css/img/judaismo.png">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index_layout.css') }}">
-    <title>Inicio</title>
+    <title>Toráh</title>
 </head>
 <body>
     
@@ -21,13 +22,16 @@
         <div class="index-main-menu" id="index-main-menu-id" style="display: none;">
             <div class="menu-space">
                 <div class="menu-item">
-                    <a href="{{ url_for('tefilot') }}" class="menu-elem">Oraciones - תְּפִלּוֹת</a>
+                    <a href="{{ url_for('tefilot') }}" class="menu-elem"><span class="heb-menu">תְּפִלּוֹת</span><br>(Oraciones)</a>
                 </div>
                 <div class="menu-item">
-                    <a href="{{ url_for('mitzbot') }}" class="menu-elem">Diez mandamientos - עֲשֶׂרֶת הַדְּבָרִים</a>
+                    <a href="{{ url_for('mitzbot') }}" class="menu-elem"><span class="heb-menu">עֲשֶׂרֶת הַדְּבָרִים</span><br>(Diez mandamientos)</a>
                 </div>
                 <div class="menu-item">
-                    <a href="{{ url_for('alphabet') }}" class="menu-elem">Alfabeto - אָלֶף־בֵּית עִבְרִי</a>
+                    <a href="{{ url_for('alphabet') }}" class="menu-elem"><span class="heb-menu">אָלֶף־בֵּית עִבְרִי</span><br>(Alfabeto)</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('calendar') }}" class="menu-elem"><span class="heb-menu">הַלּוּחַ</span><br>(Calendario)</a>
                 </div>
             </div>
         </div>

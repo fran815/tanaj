@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/css/img/judaismo.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tefilot_layout.css') }}">
+    <title>תְּפִלּוֹת</title>
+</head>
+<body>
+    <div class="main-body-div">
+        
+        <div class="main-header">
+            <div class="menu-div">
+                <div class="menu-img" onclick="menuDiv()"></div>
+            </div>
+            <!-- RADIO BUTTONS -->
+            <p class="fonet-label">Fonetica</p>
+            <div class="radio-div">
+                <input type="radio" class="radio-input" value="mirar" name="myRadio" id="radio1" onclick="toWatch()">
+                <label for="radio1" class="radio-label">On</label>
+
+                <input type="radio" class="radio-input" value="ocultar" name="myRadio" id="radio2" onclick="toUnwatch()" checked>
+                <label for="radio2" class="radio-label">Off</label>
+            </div>
+            <div class="title-div">
+                <h1>שָׁלוֹם</h1>
+            </div>
+        </div>
+
+        <div class="index-main-menu" id="index-main-menu-id" style="display: none;">
+            <div class="menu-space">
+                <div class="menu-item">
+                    <a href="{{ url_for('index') }}" class="menu-elem">- Inicio -</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('tefilot') }}" class="menu-elem"><span class="heb-menu">תְּפִלּוֹת</span><br>(Oraciones)</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('mitzbot') }}" class="menu-elem"><span class="heb-menu">עֲשֶׂרֶת הַדְּבָרִים</span><br>(Diez mandamientos)</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('alphabet') }}" class="menu-elem"><span class="heb-menu">אָלֶף־בֵּית עִבְרִי</span><br>(Alfabeto)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content-center">
+                <section>
+                    <p style="font-weight: bold;"></p>
+                    <p class="hebrew">בָּרוּךְ אַתָּה אֱלֹהִים יוֹצֵר הָעוֹלָם
+                        אֲנִי מְבַקֵּשׁ מִמְּךָ לִהְיוֹת עִמָּדִי בְּעִתּוֹת טוֹבוֹת כְּמוֹ בְּעִתּוֹת קָשׁוֹת
+                        עָזְרֵנִי לִמְצֹא שָׁלוֹם בְּתוֹךְ הַסְּבָךְ
+                        וְלִשְׁמֹר עַל הַשָּׁלוֹם בִּימֵי הַשַׁלְוָה
+                        אַתָּה מִשְׁעָנִי וּמַחְסִי
+                        תֵּן תְּמִיכָה לַסּוֹבֵל, כְּמוֹ שֶׁתְּמַכְתָּ בִּי
+                        אָמֵן
+                    </p>
+                    <div class="fonet" id="fonet">
+                        <p>Barúch atá Elohím, yotsér ha'olám.
+                            Aní mevakésh mimchá lihyót imadí b'itót tovót, kmó b'itót kashót.
+                            Azréní limtsó shalóm b'tókh hasovákh,
+                            V'lishmór al hashalóm b'iméi hashalvá.
+                            Atá mishaní umachsí.
+                            Ten temichá lasovéil, kmó shetemáchta bí.
+                            Amén.
+                        </p>
+                    </div>
+                    <p class="spanish">Bendito Dios, creador del universo. Te ruego que estés conmigo en los tiempos buenos, como en los tiempos malos. Ayúdame a encontrar paz en medio de la adversidad, y ayúdame a preservar la paz en la tranquilidad. Tu eres mi sostén y mi refugio. Ayuda al afligido como a mi me haz ayudado. Amen.</p>
+                    <br>
+                </section>
+
+                
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    function menuDiv() {
+        var mainMenu = document.getElementById('index-main-menu-id');
+
+        if (mainMenu.style.display == 'none') {
+            mainMenu.style.display = 'flex';
+        }
+        else {
+            mainMenu.style.display = 'none';
+        }
+    }
+
+    // PHONETIC LABELS
+    function toWatch() {
+        var mySelection = document.getElementById('radio1');
+        var myLabelToWatch = document.getElementsByClassName('fonet');
+        
+        if (mySelection="mirar") {
+            for (let i = 0; i < myLabelToWatch.length; i++) {
+                myLabelToWatch[i].style.display = "block";
+            }
+        }
+    }
+
+    function toUnwatch() {
+        var mySelection = document.getElementById('radio2');
+        var myLabelToWatch = document.getElementsByClassName('fonet');
+        
+        if (mySelection="ocultar") {
+            for (let i = 0; i < myLabelToWatch.length; i++) {
+                myLabelToWatch[i].style.display = "none";
+            }
+        }
+    }
+
+</script>
+
+</html>

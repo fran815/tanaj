@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/css/img/judaismo.png">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/tefilot_layout.css') }}">
     <title>תְּפִלּוֹת</title>
 </head>
@@ -14,14 +15,6 @@
                 <div class="menu-img" onclick="menuDiv()"></div>
             </div>
             <!-- RADIO BUTTONS -->
-            <p class="fonet-label">Fonetica</p>
-            <div class="radio-div">
-                <input type="radio" class="radio-input" value="mirar" name="myRadio" id="radio1" onclick="toWatch()">
-                <label for="radio1" class="radio-label">On</label>
-
-                <input type="radio" class="radio-input" value="ocultar" name="myRadio" id="radio2" onclick="toUnwatch()" checked>
-                <label for="radio2" class="radio-label">Off</label>
-            </div>
             <div class="title-div">
                 <h1>תְּפִלּוֹת</h1>
             </div>
@@ -33,155 +26,29 @@
                     <a href="{{ url_for('index') }}" class="menu-elem">- Inicio -</a>
                 </div>
                 <div class="menu-item">
-                    <a href="{{ url_for('mitzbot') }}" class="menu-elem">עֲשֶׂרֶת הַדְּבָרִים - Diez mandamientos</a>
+                    <a href="{{ url_for('mitzbot') }}" class="menu-elem"><span class="heb-menu">עֲשֶׂרֶת הַדְּבָרִים</span><br>(Diez mandamientos)</a>
                 </div>
                 <div class="menu-item">
-                    <a href="{{ url_for('alphabet') }}" class="menu-elem">אָלֶף־בֵּית עִבְרִי - Alfabeto</a>
+                    <a href="{{ url_for('alphabet') }}" class="menu-elem"><span class="heb-menu">אָלֶף־בֵּית עִבְרִי</span><br>(Alfabeto)</a>
                 </div>
             </div>
         </div>
 
         <div class="main-content">
             <div class="content-center">
-                <!-- <h2>Oraciones diarias</h2> -->
+                
                 <section>
-                    <p style="font-weight: bold;">תְּפִלָּה בֹּקֶר - Oracion matutina</p>
-                    <p class="hebrew">מוֹדֶה (מוֹדָה) אֲנִי לְפָנֶֽיךָ מֶֽלֶךְ חַי וְקַיָּים. שֶׁהֶֽחֱזַֽרְתָּ בִּי נִשְׁמָתִי בְחֶמְלָה. רַבָּה אֱמֽוּנָתֶֽךָ</p>
-                    <div class="fonet" id="fonet">
-                        <p>Modé aní lefaneja mélej jai vekayam shehejezarta bi nishmatí bejemlá, rabá emunateja.</p>
+                    <div class="list-div">
+                        <ul>
+                            <li><a href="{{ url_for('despertar') }}"><span class="heb-name">לְהִתְעוֹרֵר</span><br>(Despertar)</a></li>
+                            <li><a href="{{ url_for('alimentos') }}"><span class="heb-name">מַזּוֹנוֹת</span><br>(Alimentos)</a></li>
+                            <li><a href="{{ url_for('dormir') }}"><span class="heb-name">לִישׁוֹן</span><br>(Dormir)</a></li>
+                            <li><a href="{{ url_for('salud') }}"><span class="heb-name">בְּרִיאוּת</span><br>(Salud)</a></li>
+                            <li><a href="{{ url_for('paz') }}"><span class="heb-name">שָׁלוֹם</span><br>(Paz)</a></li>
+                            <li><a href="{{ url_for('sabiduria') }}"><span class="heb-name">חָכְמָה</span><br>(Sabiduria)</a></li>
+                        </ul>
                     </div>
-                    <p class="spanish">Doy gracias ante ti, Oh Rey vivo y eterno, por haberme devuelto bondadosamente el alma; grande es mi confianza en Ti.</p>
-                    <br>
                 </section>
-
-                <hr>
-
-                <section>
-                    <p style="font-weight: bold;">שְׁמַע יִשְׂרָאֵל - Oye Israel</p>
-                    <p class="hebrew">
-                        שְׁמַע יִשְׂרָאֵל, יְהֹוָה אֱלהֵינוּ, יְהֹוָה אֶחָד בָּרוּךְ
-                        <br>שֵׁם כְּבוד מַלְכוּתו, לְעולָם וָעֶד
-                        <br>וְאָהַבְתָּ אֵת יְהֹוָה אֱלהֶיךָ. בְּכָל לְבָבְךָ וּבְכָל נַפְשְׁךָ וּבְכָל מְאדֶךָ: וְהָיוּ הַדְּבָרִים הָאֵלֶּה אֲשֶׁר אָנכִי מְצַוְּךָ הַיּום עַל לְבָבֶךָ
-                        <br>וְשִׁנַּנְתָּם לְבָנֶיךָ וְדִבַּרְתָּ בָּם. בְּשִׁבְתְּךָ בְּבֵיתֶךָ וּבְלֶכְתְּךָ בַדֶּרֶךְ וּבְשָׁכְבְּךָ וּבְקוּמֶךָ: וּקְשַׁרְתָּם לְאות עַל יָדֶךָ. וְהָיוּ לְטטָפת בֵּין
-                        <br>עֵינֶיךָ: וּכְתַבְתָּם עַל מְזֻזות בֵּיתֶךָ וּבִשְׁעָרֶיךָ
-                    </p>
-                    <div class="fonet" id="fonet">
-                        <p>
-                            Shemá Israel Adonai Elohéinu Adonái Ejád.<br>
-                            Barúj Shem Kevód Maljutó Leolám Vaéd.<br>
-                            Veahavtá et Adonai Elohéja, Bejól Levavjá, Uvejól Nafshejá, Uvejól Meodéja. Vehaiú Hadvarím Haéile Ashér Anojí Metzavjá Haióm Al Levavéja. Veshinantám Levanéja Vedibartá Bam, Beshivtejá Beveitéja, Uvelejtejá Vadérej, Uveshojbejá, Uvkumejá. Ukshartám Leót Al Iadeja Vehaui Letotafot Bein Eneja Uktabtam al Mezuzot Beitéja, Uvishearéja.
-                        </p>
-                    </div>
-                    <p class="spanish">
-                        Escucha, Israel, Hashem es nuestro Dios, Hashem es uno<br>
-                        (Se dice en voz baja) Bendito sea el Nombre de Su glorioso reino para toda la eternidad.<br>
-                        Amarás a Hashem tu Dios con todo tu corazón, con toda tu alma y con todos tus medios. Estas palabras que Yo te ordeno hoy las guardarás en tu corazón. Las enseñarás a tus hijos y hablarás de ellas cuando estés en tu casa, cuando andes en el camino, al acostarte y al levantarte. Las atarás como señal sobre tu mano y serán un emblema entre tus ojos. Las escribirás en las entradas de tu casa y en tus portales.
-                    </p>
-                    <br>
-                </section>
-
-                <hr>
-
-                <section>
-                    <p style="font-weight: bold;">רִבּוֹנוֹ שֶׁל עוֹלָם - Señor del universo</p>
-                    <p class="hebrew">רִבּוֹנוֹ שֶׁל עוֹלָם
-                        הֲרֵינִי מוֹחֵל
-                        לְכָל מִי שֶׁהִכְעִיס וְהִקְנִיט אוֹתִי
-                        אוֹ
-                        שֶׁחָטָא כְּנֶגְדִּי
-                        בֵּין בְּגוּפִי בֵּין בְּמָמוֹנִי
-                        בֵּין בִּכְבוֹדִי בֵּין בְּכָל אֲשֶׁר לִי
-                        בֵּין בְּאוֹנֶס בֵּין בְּרָצוֹן
-                        בֵּין בְּשׁוֹגֵג בֵּין בְּמֵזִיד בֵּין בְּמַחֲשָׁבָה בֵּין בְּדִבּוּר בֵּין בְּמַעֲשֶׂה.
-                        בֵּין בְּגִלְגּוּל זֶה
-                        בֵּין בְּגִלְגּוּל אַחֵר
-                        לְכָל בַּר יִשְׂרָאֵל וְלֹא יֵעָנֵשׁ
-                        שׁוּם אָדָם בְּסִבָּתִי.
-                        
-                        יְהִי רָצוֹן מִלְּפָנֶיךָ
-                        אֲדֹנָי אֱלֹהַי
-                        וֵאלֹהֵי אֲבוֹתַי
-                        שֶׁלֹּא אֶחְטָא עוֹד
-                        וְלֹא אֶחֱזוֹר
-                        בָּהֶם
-                        וְלֹא אָשׁוּב עוֹד
-                        לְהַכְעִיסֶךָ
-                        וְלֹא אֶעֱשֶׂה
-                        הָרַע בְּעֵינֶיךָ.
-                        
-                        וּמַה שֶׁחָטָאתִי
-                        לְפָנֶיךָ מְחוֹק
-                        בְּרַחֲמֶיךָ הָרַבִּים
-                        אֲבָל לֹא עַל יְדֵי יִסּוּרִים
-                        וָחֳלָיִם רָעִים.
-                        
-                        יִהְיוּ לְרָצוֹן
-                        אִמְרֵי־פִי
-                        וְהֶגְיוֹן
-                        לִבִּי
-                        לְפָנֶיךָ
-                        יְהוָה צוּרִי וְגֹאֲלִי</p>
-                    <div class="fonet">
-                        <p>
-                            Ribbonó shel ölam hareni
-                            mojel vesoléaj lejol
-                            mi shehijïs vehiknit
-                            otí o shejatá
-                            kenegdí ben begufí
-                            ben bemamoní ben bijvodí ben
-                            bejol asher li ben beones
-                            ben beratzón ben beshogueg ben bemezid ben bedibbur
-                            ben bemaäsé ben beguilgul ze ben beguilgul
-                            ajer lejol bar
-                            israel veló ieänesh
-                            shum adam besibbatí
-                            iehí ratzón mil´lefaneja
-                            ado-nai elo-hai ve´elo-hé
-                            avotai shel´ló ejetá
-                            öd umá shejatati lefaneja
-                            mejok berrajameja harabbim
-                            aval lo äl iedé issurín
-                            vejolaim raïm ihiú
-                            leratzón imré-fi vehegión
-                            libbí lefaneja ado-nai
-                            tzurí vegoalí
-                        </p>
-                    </div>
-                    <p class="spanish">Señor del universo,
-                        perdono
-                        a quien me haya hecho daño
-                        y a quien me haya hecho
-                        daño,
-                        ya sea
-                        intencionalmente o por accidente, con palabras o con obras,
-                        en esta encarnación o en las anteriores. Que nadie sea castigado por mi culpa.
-                        
-                        Sea tu voluntad,
-                        oh Dios mío,
-                        Dios de mis padres,
-                        que no peque más,
-                        que no vuelva
-                        a mis viejos caminos,
-                        que no te enoje más
-                        con mis acciones,
-                        que no haga lo
-                        que es malo ante tus ojos.
-                        
-                        Limpia los pecados
-                        que he cometido,
-                        con tu gran compasión,
-                        pero no a través de
-                        la enfermedad o el sufrimiento.
-                        
-                        Sean aceptables delante de ti, oh Señor, Roca mía y Redentor, estas palabras
-                        de mi boca
-                        y las oraciones
-                        de mi corazón.
-                    </p>
-                    <br>
-                </section>
-
-                <hr>
 
             </div>
         </div>

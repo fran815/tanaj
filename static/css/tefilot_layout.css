@@ -89,6 +89,9 @@ h1 {
     color: white;
 }
 
+.heb-menu {
+    font-size: 32px;
+}
 
 /* radio buttons */
 .fonet-label {
@@ -155,7 +158,6 @@ h1 {
     width: 95%;
     text-align: center;
     font-family: sans-serif;
-
     
 }
 
@@ -163,7 +165,7 @@ h1 {
 /* TEXTS */
 .hebrew {
     font-weight: bold;
-    font-size: 27px;
+    font-size: 32px;
     color: black;
 }
 .fonet {
@@ -173,6 +175,29 @@ h1 {
 }
 .spanish {
     color: white;
+}
+
+
+/* LISTS */
+.list-div {
+    display: flex;
+    justify-content: center;
+}
+.heb-name {
+    font-size: 38px;
+    font-weight: bold;
+}
+li {
+    list-style-type: none;
+    font-weight: bold;
+    text-align: center;
+
+    margin-bottom: 22px;
+}
+li a {
+    text-decoration: none;
+    color: black;
+    
 }
 
 

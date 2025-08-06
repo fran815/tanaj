@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/css/img/judaismo.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tefilot_layout.css') }}">
+    <title>תְּפִלּוֹת</title>
+</head>
+<body>
+    <div class="main-body-div">
+        
+        <div class="main-header">
+            <div class="menu-div">
+                <div class="menu-img" onclick="menuDiv()"></div>
+            </div>
+            <!-- RADIO BUTTONS -->
+            <p class="fonet-label">Fonetica</p>
+            <div class="radio-div">
+                <input type="radio" class="radio-input" value="mirar" name="myRadio" id="radio1" onclick="toWatch()">
+                <label for="radio1" class="radio-label">On</label>
+
+                <input type="radio" class="radio-input" value="ocultar" name="myRadio" id="radio2" onclick="toUnwatch()" checked>
+                <label for="radio2" class="radio-label">Off</label>
+            </div>
+            <div class="title-div">
+                <h1>לְהִתְעוֹרֵר</h1>
+            </div>
+        </div>
+
+        <div class="index-main-menu" id="index-main-menu-id" style="display: none;">
+            <div class="menu-space">
+                <div class="menu-item">
+                    <a href="{{ url_for('index') }}" class="menu-elem">- Inicio -</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('tefilot') }}" class="menu-elem"><span class="heb-menu">תְּפִלּוֹת</span><br>(Oraciones)</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('mitzbot') }}" class="menu-elem"><span class="heb-menu">עֲשֶׂרֶת הַדְּבָרִים</span><br>(Diez mandamientos)</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('alphabet') }}" class="menu-elem"><span class="heb-menu">אָלֶף־בֵּית עִבְרִי</span><br>(Alfabeto)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content-center">
+                <section>
+                    <p style="font-weight: bold;">תְּפִלָּה בֹּקֶר - Oracion matutina</p>
+                    <p class="hebrew">מוֹדֶה (מוֹדָה) אֲנִי לְפָנֶֽיךָ מֶֽלֶךְ חַי וְקַיָּים. שֶׁהֶֽחֱזַֽרְתָּ בִּי נִשְׁמָתִי בְחֶמְלָה. רַבָּה אֱמֽוּנָתֶֽךָ</p>
+                    <div class="fonet" id="fonet">
+                        <p>Modé aní lefaneja mélej jai vekayam shehejezarta bi nishmatí bejemlá, rabá emunateja.</p>
+                    </div>
+                    <p class="spanish">Doy gracias ante ti, Oh Rey vivo y eterno, por haberme devuelto bondadosamente el alma; grande es mi confianza en Ti.</p>
+                    <br>
+                </section>
+
+                <hr>
+
+                <section>
+                    <p style="font-weight: bold;">שְׁמַע יִשְׂרָאֵל - Oye Israel</p>
+                    <p class="hebrew">
+                        שְׁמַע יִשְׂרָאֵל, יְהֹוָה אֱלהֵינוּ, יְהֹוָה אֶחָד בָּרוּךְ
+                        <br>שֵׁם כְּבוד מַלְכוּתו, לְעולָם וָעֶד
+                        <br>וְאָהַבְתָּ אֵת יְהֹוָה אֱלהֶיךָ. בְּכָל לְבָבְךָ וּבְכָל נַפְשְׁךָ וּבְכָל מְאדֶךָ: וְהָיוּ הַדְּבָרִים הָאֵלֶּה אֲשֶׁר אָנכִי מְצַוְּךָ הַיּום עַל לְבָבֶךָ
+                        <br>וְשִׁנַּנְתָּם לְבָנֶיךָ וְדִבַּרְתָּ בָּם. בְּשִׁבְתְּךָ בְּבֵיתֶךָ וּבְלֶכְתְּךָ בַדֶּרֶךְ וּבְשָׁכְבְּךָ וּבְקוּמֶךָ: וּקְשַׁרְתָּם לְאות עַל יָדֶךָ. וְהָיוּ לְטטָפת בֵּין
+                        <br>עֵינֶיךָ: וּכְתַבְתָּם עַל מְזֻזות בֵּיתֶךָ וּבִשְׁעָרֶיךָ
+                    </p>
+                    <div class="fonet" id="fonet">
+                        <p>
+                            Shemá Israel Adonai Elohéinu Adonái Ejád.<br>
+                            Barúj Shem Kevód Maljutó Leolám Vaéd.<br>
+                            Veahavtá et Adonai Elohéja, Bejól Levavjá, Uvejól Nafshejá, Uvejól Meodéja. Vehaiú Hadvarím Haéile Ashér Anojí Metzavjá Haióm Al Levavéja. Veshinantám Levanéja Vedibartá Bam, Beshivtejá Beveitéja, Uvelejtejá Vadérej, Uveshojbejá, Uvkumejá. Ukshartám Leót Al Iadeja Vehaui Letotafot Bein Eneja Uktabtam al Mezuzot Beitéja, Uvishearéja.
+                        </p>
+                    </div>
+                    <p class="spanish">
+                        Escucha, Israel, Hashem es nuestro Dios, Hashem es uno<br>
+                        (Se dice en voz baja) Bendito sea el Nombre de Su glorioso reino para toda la eternidad.<br>
+                        Amarás a Hashem tu Dios con todo tu corazón, con toda tu alma y con todos tus medios. Estas palabras que Yo te ordeno hoy las guardarás en tu corazón. Las enseñarás a tus hijos y hablarás de ellas cuando estés en tu casa, cuando andes en el camino, al acostarte y al levantarte. Las atarás como señal sobre tu mano y serán un emblema entre tus ojos. Las escribirás en las entradas de tu casa y en tus portales.
+                    </p>
+                    <br>
+                </section>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    function menuDiv() {
+        var mainMenu = document.getElementById('index-main-menu-id');
+
+        if (mainMenu.style.display == 'none') {
+            mainMenu.style.display = 'flex';
+        }
+        else {
+            mainMenu.style.display = 'none';
+        }
+    }
+
+    // PHONETIC LABELS
+    function toWatch() {
+        var mySelection = document.getElementById('radio1');
+        var myLabelToWatch = document.getElementsByClassName('fonet');
+        
+        if (mySelection="mirar") {
+            for (let i = 0; i < myLabelToWatch.length; i++) {
+                myLabelToWatch[i].style.display = "block";
+            }
+        }
+    }
+
+    function toUnwatch() {
+        var mySelection = document.getElementById('radio2');
+        var myLabelToWatch = document.getElementsByClassName('fonet');
+        
+        if (mySelection="ocultar") {
+            for (let i = 0; i < myLabelToWatch.length; i++) {
+                myLabelToWatch[i].style.display = "none";
+            }
+        }
+    }
+
+</script>
+
+</html>

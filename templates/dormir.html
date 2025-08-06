@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/css/img/judaismo.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tefilot_layout.css') }}">
+    <title>תְּפִלּוֹת</title>
+</head>
+<body>
+    <div class="main-body-div">
+        
+        <div class="main-header">
+            <div class="menu-div">
+                <div class="menu-img" onclick="menuDiv()"></div>
+            </div>
+            <!-- RADIO BUTTONS -->
+            <p class="fonet-label">Fonetica</p>
+            <div class="radio-div">
+                <input type="radio" class="radio-input" value="mirar" name="myRadio" id="radio1" onclick="toWatch()">
+                <label for="radio1" class="radio-label">On</label>
+
+                <input type="radio" class="radio-input" value="ocultar" name="myRadio" id="radio2" onclick="toUnwatch()" checked>
+                <label for="radio2" class="radio-label">Off</label>
+            </div>
+            <div class="title-div">
+                <h1>לִישׁוֹן</h1>
+            </div>
+        </div>
+
+        <div class="index-main-menu" id="index-main-menu-id" style="display: none;">
+            <div class="menu-space">
+                <div class="menu-item">
+                    <a href="{{ url_for('index') }}" class="menu-elem">- Inicio -</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('tefilot') }}" class="menu-elem"><span class="heb-menu">תְּפִלּוֹת</span><br>(Oraciones)</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('mitzbot') }}" class="menu-elem"><span class="heb-menu">עֲשֶׂרֶת הַדְּבָרִים</span><br>(Diez mandamientos)</a>
+                </div>
+                <div class="menu-item">
+                    <a href="{{ url_for('alphabet') }}" class="menu-elem"><span class="heb-menu">אָלֶף־בֵּית עִבְרִי</span><br>(Alfabeto)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content-center">
+
+                <section>
+                    <p style="font-weight: bold;">קְרִיאַת שְׁמַע עַל הַמִּטָּה - Lectura del Shemá en la cama</p>
+                    <p class="hebrew">שְׁמַע יִשְׂרָאֵל אֲדֹנָי אֱלֹהֵינוּ אֲדֹנָי אֶחָד<br>הַמַּפִּיל חֶבְלֵי שֵׁנָה עַל עֵינַי בָּרוּךְ הַמַּפִּיל חֶבְלֵי שֵׁנָה עַל עֵינַי וּתְנוּמָה עַל עַפְעַפָּי</p>
+                    <div class="fonet" id="fonet">
+                        <p>Shemá Israel, Adonái Elohéinu, Adonái Ejad<br>HaMapil chevlé sheiná al einay... Barúj HaMapil chevlé sheiná al einay, utnumá al afapay</p>
+                    </div>
+                    <p class="spanish">Escucha, Israel: el Señor es nuestro Dios, el Señor es Uno<br>Que hace caer los hilos del sueño sobre mis ojos... Bendito el que hace caer el sueño sobre mis ojos y la somnolencia sobre mis párpados</p>
+                    <br>
+                </section>
+
+                <hr>
+
+               <section>
+                    <p style="font-weight: bold;">רִבּוֹנוֹ שֶׁל עוֹלָם - Señor del universo</p>
+                    <p class="hebrew">רִבּוֹנוֹ שֶׁל עוֹלָם
+                        הֲרֵינִי מוֹחֵל
+                        לְכָל מִי שֶׁהִכְעִיס וְהִקְנִיט אוֹתִי
+                        אוֹ
+                        שֶׁחָטָא כְּנֶגְדִּי
+                        בֵּין בְּגוּפִי בֵּין בְּמָמוֹנִי
+                        בֵּין בִּכְבוֹדִי בֵּין בְּכָל אֲשֶׁר לִי
+                        בֵּין בְּאוֹנֶס בֵּין בְּרָצוֹן
+                        בֵּין בְּשׁוֹגֵג בֵּין בְּמֵזִיד בֵּין בְּמַחֲשָׁבָה בֵּין בְּדִבּוּר בֵּין בְּמַעֲשֶׂה.
+                        בֵּין בְּגִלְגּוּל זֶה
+                        בֵּין בְּגִלְגּוּל אַחֵר
+                        לְכָל בַּר יִשְׂרָאֵל וְלֹא יֵעָנֵשׁ
+                        שׁוּם אָדָם בְּסִבָּתִי.
+                        
+                        יְהִי רָצוֹן מִלְּפָנֶיךָ
+                        אֲדֹנָי אֱלֹהַי
+                        וֵאלֹהֵי אֲבוֹתַי
+                        שֶׁלֹּא אֶחְטָא עוֹד
+                        וְלֹא אֶחֱזוֹר
+                        בָּהֶם
+                        וְלֹא אָשׁוּב עוֹד
+                        לְהַכְעִיסֶךָ
+                        וְלֹא אֶעֱשֶׂה
+                        הָרַע בְּעֵינֶיךָ.
+                        
+                        וּמַה שֶׁחָטָאתִי
+                        לְפָנֶיךָ מְחוֹק
+                        בְּרַחֲמֶיךָ הָרַבִּים
+                        אֲבָל לֹא עַל יְדֵי יִסּוּרִים
+                        וָחֳלָיִם רָעִים.
+                        
+                        יִהְיוּ לְרָצוֹן
+                        אִמְרֵי־פִי
+                        וְהֶגְיוֹן
+                        לִבִּי
+                        לְפָנֶיךָ
+                        יְהוָה צוּרִי וְגֹאֲלִי</p>
+                    <div class="fonet">
+                        <p>
+                            Ribbonó shel ölam hareni
+                            mojel vesoléaj lejol
+                            mi shehijïs vehiknit
+                            otí o shejatá
+                            kenegdí ben begufí
+                            ben bemamoní ben bijvodí ben
+                            bejol asher li ben beones
+                            ben beratzón ben beshogueg ben bemezid ben bedibbur
+                            ben bemaäsé ben beguilgul ze ben beguilgul
+                            ajer lejol bar
+                            israel veló ieänesh
+                            shum adam besibbatí
+                            iehí ratzón mil´lefaneja
+                            ado-nai elo-hai ve´elo-hé
+                            avotai shel´ló ejetá
+                            öd umá shejatati lefaneja
+                            mejok berrajameja harabbim
+                            aval lo äl iedé issurín
+                            vejolaim raïm ihiú
+                            leratzón imré-fi vehegión
+                            libbí lefaneja ado-nai
+                            tzurí vegoalí
+                        </p>
+                    </div>
+                    <p class="spanish">Señor del universo,
+                        perdono
+                        a quien me haya hecho daño
+                        y a quien me haya hecho
+                        daño,
+                        ya sea
+                        intencionalmente o por accidente, con palabras o con obras,
+                        en esta encarnación o en las anteriores. Que nadie sea castigado por mi culpa.
+                        
+                        Sea tu voluntad,
+                        oh Dios mío,
+                        Dios de mis padres,
+                        que no peque más,
+                        que no vuelva
+                        a mis viejos caminos,
+                        que no te enoje más
+                        con mis acciones,
+                        que no haga lo
+                        que es malo ante tus ojos.
+                        
+                        Limpia los pecados
+                        que he cometido,
+                        con tu gran compasión,
+                        pero no a través de
+                        la enfermedad o el sufrimiento.
+                        
+                        Sean aceptables delante de ti, oh Señor, Roca mía y Redentor, estas palabras
+                        de mi boca
+                        y las oraciones
+                        de mi corazón.
+                    </p>
+                    <br>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    function menuDiv() {
+        var mainMenu = document.getElementById('index-main-menu-id');
+
+        if (mainMenu.style.display == 'none') {
+            mainMenu.style.display = 'flex';
+        }
+        else {
+            mainMenu.style.display = 'none';
+        }
+    }
+
+    // PHONETIC LABELS
+    function toWatch() {
+        var mySelection = document.getElementById('radio1');
+        var myLabelToWatch = document.getElementsByClassName('fonet');
+        
+        if (mySelection="mirar") {
+            for (let i = 0; i < myLabelToWatch.length; i++) {
+                myLabelToWatch[i].style.display = "block";
+            }
+        }
+    }
+
+    function toUnwatch() {
+        var mySelection = document.getElementById('radio2');
+        var myLabelToWatch = document.getElementsByClassName('fonet');
+        
+        if (mySelection="ocultar") {
+            for (let i = 0; i < myLabelToWatch.length; i++) {
+                myLabelToWatch[i].style.display = "none";
+            }
+        }
+    }
+
+</script>
+
+</html>

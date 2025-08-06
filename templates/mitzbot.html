@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/css/img/judaismo.png">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mitzbot_layout.css') }}">
     <title>מִצבוֹת</title>
 </head>
@@ -33,10 +34,10 @@
                     <a href="{{ url_for('index') }}" class="menu-elem">- Inicio -</a>
                 </div>
                 <div class="menu-item">
-                    <a href="{{ url_for('tefilot') }}" class="menu-elem">תְּפִלּוֹת - Oraciones</a>
+                    <a href="{{ url_for('tefilot') }}" class="menu-elem"><span class="heb-menu">תְּפִלּוֹת</span><br>(Oraciones)</a>
                 </div>
                 <div class="menu-item">
-                    <a href="{{ url_for('alphabet') }}" class="menu-elem">אָלֶף־בֵּית עִבְרִי - Alfabeto</a>
+                    <a href="{{ url_for('alphabet') }}" class="menu-elem"><span class="heb-menu">אָלֶף־בֵּית</span><br>(Alfabeto)</a>
                 </div>
             </div>
         </div>

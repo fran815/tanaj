@@ -43,5 +43,36 @@ def alphabet():
     return render_template('alphabet.html')
 
 
+# SECCION DE ORACIONES
+@app.route('/despertar')
+def despertar():
+    return render_template('despertar.html')
+
+@app.route('/alimentos')
+def alimentos():
+    return render_template('alimentos.html')
+
+@app.route('/dormir')
+def dormir():
+    return render_template('dormir.html')
+
+@app.route('/salud')
+def salud():
+    return render_template('salud.html')
+
+@app.route('/paz')
+def paz():
+    return render_template('paz.html')
+
+@app.route('/sabiduria')
+def sabiduria():
+    return render_template('sabiduria.html')
+
+
+# CALENDAR
+@app.route('/calendar')
+def calendar():
+    return render_template('calendar.html')
+
 if __name__=='__main__':
     app.run(debug=True)
